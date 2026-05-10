@@ -6,6 +6,10 @@ An AI-driven, manga-paneled text adventure where you create an OC who wakes up i
 
 Built with **Claude Code** + **Google AI Studio** (Gemini, Imagen, Vertex AI) as a proof that probabilistic LLMs can be trusted with beloved IP — if you give them the right architecture.
 
+<p align="center">
+  <img src="screenshots/01-landing.png" width="420" alt="Title screen" />
+</p>
+
 ---
 
 ## What it feels like to play
@@ -16,6 +20,29 @@ Built with **Claude Code** + **Google AI Studio** (Gemini, Imagen, Vertex AI) as
 - BGM cross-fades to match the mood. SFX fires on key actions.
 - You can save, branch timelines, and export any scene to a manga PDF
 - The story advances through authored canon beats — hitting the same emotional checkpoints as the game, but shaped entirely by your choices
+
+### Create your character (5 steps)
+
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/02-creation-step0.png" /><br/><sub>Name + appearance</sub></td>
+    <td align="center"><img src="screenshots/03-creation-step1.png" /><br/><sub>Form, Paimon, backstory</sub></td>
+    <td align="center"><img src="screenshots/04-creation-step2.png" /><br/><sub>Vision / Element</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/05-creation-step3.png" /><br/><sub>Elemental Skill</sub></td>
+    <td align="center"><img src="screenshots/06-creation-step4.png" /><br/><sub>Elemental Burst → descend</sub></td>
+    <td align="center"><img src="screenshots/07-avatar-reveal.png" /><br/><sub>Vessel manifested</sub></td>
+  </tr>
+</table>
+
+### Imagen 3 generates your avatar
+
+After creation, Imagen 3 renders a full character sheet — then Gemini-vision extracts an `enhancedDescription` that keeps every subsequent manga panel visually consistent.
+
+<p align="center">
+  <img src="screenshots/08-avatar-lightbox.png" width="360" alt="Imagen-3 generated character art" />
+</p>
 
 ---
 
@@ -47,6 +74,36 @@ The result: the story is always heading somewhere real, but the journey is entir
 - Manga PDF export via `html-to-image` + `jspdf`
 - DB backup/restore (zip-split for large saves)
 - Browser TTS with per-character voice/pitch heuristics
+
+### Gameplay — manga panels, narration, choices, HUD
+
+Every turn produces a new Imagen-3 manga panel, Gemini narration, and 3 timed choices — all in one view. The HUD tracks HP, chapter, saves, and rollback.
+
+<p align="center">
+  <img src="screenshots/11-gameplay-turn1-prompt.png" width="780" alt="Full gameplay view — turn 1" />
+</p>
+
+### The story unfolds turn by turn
+
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/12-gameplay-turn2-result.png" /><br/><sub>Paimon grounds you in the lore</sub></td>
+    <td align="center"><img src="screenshots/12-gameplay-turn3-result.png" /><br/><sub>Mondstadt comes into view</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/12-gameplay-turn4-result-dialogue-visible.png" /><br/><sub>Testing your Electro powers — Paimon reacts</sub></td>
+    <td align="center"><img src="screenshots/13-gameplay-saved.png" /><br/><sub>"Progress enshrined in the Ley Lines!"</sub></td>
+  </tr>
+</table>
+
+### Save, load, and export
+
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/15-load-screen.png" /><br/><sub>Load screen — saves with panel thumbnails</sub></td>
+    <td align="center"><img src="screenshots/17-manga-export-modal.png" /><br/><sub>Export your adventure as a manga PDF</sub></td>
+  </tr>
+</table>
 
 ---
 
