@@ -251,7 +251,7 @@ The workflow:
 ### Setup
 
 ```bash
-git clone https://github.com/akash-r34/Teyvat-Chronicles
+git clone https://github.com/akash-r34/Teyvat-Chronicles-public
 cd Teyvat-Chronicles
 npm install
 cp .env.example .env.local
