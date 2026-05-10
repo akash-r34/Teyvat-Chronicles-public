@@ -1,0 +1,10 @@
+[
+  { "noun": "mondstadt", "canonical": "Mondstadt", "category": "region", "aliases": ["city of freedom", "mond"] },
+  { "noun": "paimon", "canonical": "Paimon", "category": "character", "aliases": ["emergency food"] },
+  { "noun": "fatui", "canonical": "Fatui", "category": "faction", "aliases": [] },
+  { "noun": "vision", "canonical": "Vision", "category": "item", "aliases": ["visions"] },
+  { "noun": "mora", "canonical": "Mora", "category": "item", "aliases": [] },
+  { "noun": "adventurers guild", "canonical": "Adventurers' Guild", "category": "faction", "aliases": [] },
+  { "noun": "knights of favonius", "canonical": "Knights of Favonius", "category": "faction", "aliases": ["favonius"] },
+  { "noun": "abyss order", "canonical": "Abyss Order", "category": "faction", "aliases": ["the abyss"] }
+]

@@ -1,0 +1,908 @@
+{
+  "region": "Inazuma",
+  "archon_quest_chapter": "II",
+  "archon_quest_acts": [
+    "I",
+    "II",
+    "III"
+  ],
+  "version": "2.1",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Inazuma is an isolationist, oppressive nation ruled by the Raiden Shogun, who is confiscating Visions. The tone is darker, focusing on rebellion, loss, and the nature of eternity.",
+  "emotional_register_default": "oppressive, rebellious, tragic",
+  "named_npcs_introduced": [
+    "Beidou",
+    "Kazuha",
+    "Thoma",
+    "Ayaka",
+    "Yoimiya",
+    "Yae Miko",
+    "Raiden Shogun",
+    "Kokomi",
+    "Gorou",
+    "Teppei",
+    "Scaramouche",
+    "Signora"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "cataclysm"
+    ],
+    "hint_only": [
+      "irminsul",
+      "descenders"
+    ]
+  },
+  "beats": [
+    {
+      "id": "inazuma.01",
+      "title": "A Way Across the Sea",
+      "required_npcs": [
+        "Beidou",
+        "Kazuha"
+      ],
+      "location": "The Alcor (Liyue Harbor)",
+      "must_happen": [
+        "Player negotiates passage to Inazuma with Beidou.",
+        "They participate in a tournament (or skip to departure) to secure a ride.",
+        "The Alcor sets sail toward the eternal storm."
+      ],
+      "canon_dialogue_hooks": [
+        "Beidou: \"Hold on tight! The thunderstorm ahead is no joke.\""
+      ],
+      "player_freedom": [
+        "Interaction with the crew.",
+        "Asking Kazuha about his dead friend."
+      ],
+      "forbidden": [
+        "Taking a different ship.",
+        "Swimming there."
+      ],
+      "emotional_register": "anticipation, danger",
+      "exit_when": [
+        "The storm is cleared and Ritou comes into view."
+      ],
+      "exit_keywords": [
+        "the storm is cleared and ritou comes into view."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.02",
+      "title": "Stranded in Ritou",
+      "required_npcs": [
+        "Thoma"
+      ],
+      "location": "Ritou, Inazuma",
+      "must_happen": [
+        "Player arrives and tries to process through the Outlander terminal.",
+        "They face absurd corruption and extortionate fees.",
+        "Thoma, a mysterious 'fixer', bails them out."
+      ],
+      "canon_dialogue_hooks": [
+        "Thoma: \"Inazuma is... not the most welcoming place right now.\""
+      ],
+      "player_freedom": [
+        "Frustration at the bureaucracy.",
+        "How much they trust Thoma."
+      ],
+      "forbidden": [
+        "Murdering the customs officials."
+      ],
+      "emotional_register": "frustration, entrapment",
+      "exit_when": [
+        "Player clears customs but is locked in Ritou."
+      ],
+      "exit_keywords": [
+        "player clears customs but is locked in ritou."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.03",
+      "title": "The Merchants of Ritou",
+      "required_npcs": [
+        "Kurisu"
+      ],
+      "location": "Ritou",
+      "must_happen": [
+        "Player witnesses the harsh treatment of foreign merchants by the Kanjou Commission.",
+        "Player helps the merchant guild settle a corrupt tax issue to gain favor."
+      ],
+      "canon_dialogue_hooks": [
+        "Kurisu: \"We can barely afford to breathe here let alone trade...\""
+      ],
+      "player_freedom": [
+        "Sympathy for the merchants.",
+        "Methods of 'persuading' the corrupt inspector."
+      ],
+      "forbidden": [
+        "Ignoring the merchants entirely."
+      ],
+      "emotional_register": "indignation, systemic oppression",
+      "exit_when": [
+        "Player secures the merchants' safety."
+      ],
+      "exit_keywords": [
+        "player secures the merchants' safety."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.04",
+      "title": "Chisato's Letter",
+      "required_npcs": [
+        "Hiiragi Chisato"
+      ],
+      "location": "Ritou",
+      "must_happen": [
+        "To leave Ritou legally, the player makes a deal with the commissioner's daughter, Chisato.",
+        "She asks them to deliver a love letter to Kujou Kamaji on Narukami Island.",
+        "Player gets a border pass."
+      ],
+      "canon_dialogue_hooks": [
+        "Chisato: \"Please... you must deliver this in secret.\""
+      ],
+      "player_freedom": [
+        "Reading or not reading the letter.",
+        "Teasing her about the romance."
+      ],
+      "forbidden": [
+        "Refusing to help.",
+        "Attacking the border guards."
+      ],
+      "emotional_register": "clandestine, romantic comedy",
+      "exit_when": [
+        "Player escorts a transport balloon across the Ritou border."
+      ],
+      "exit_keywords": [
+        "player escorts a transport balloon across the ritou border."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.05",
+      "title": "Komore Teahouse",
+      "required_npcs": [
+        "Thoma",
+        "Taroumaru"
+      ],
+      "location": "Komore Teahouse, Narukami Island",
+      "must_happen": [
+        "Player reaches Narukami Island.",
+        "Thoma leads them to a VIP safehouse guarded by a Shiba Inu (Taroumaru).",
+        "Thoma reveals his true allegiance to the Kamisato Clan."
+      ],
+      "canon_dialogue_hooks": [
+        "Thoma: \"This teahouse is the safest place in Inazuma... provided Taroumaru likes you.\""
+      ],
+      "player_freedom": [
+        "Petting the dog.",
+        "Reactions to Thoma's deceit."
+      ],
+      "forbidden": [
+        "Leaving the teahouse without meeting Ayaka through the screen."
+      ],
+      "emotional_register": "cozy, secretive",
+      "exit_when": [
+        "Player heads to the Kamisato Estate."
+      ],
+      "exit_keywords": [
+        "player heads to the kamisato estate."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.06",
+      "title": "The Meaning of Meaningless Waiting",
+      "required_npcs": [
+        "Ayaka (Behind Screen)",
+        "Paimon"
+      ],
+      "location": "Kamisato Estate",
+      "must_happen": [
+        "Player meets Ayaka (who initially hides behind a screen).",
+        "Ayaka begs the player to join the fight against the Vision Hunt Decree.",
+        "Player initially refuses, only wanting to meet the Raiden Shogun and leave.",
+        "Ayaka makes a deal: meet three people who lost their Visions, then decide."
+      ],
+      "canon_dialogue_hooks": [
+        "Ayaka: \"I understand you are a traveler... but my people are suffering.\""
+      ],
+      "player_freedom": [
+        "How blunt they are about not wanting to be a hero."
+      ],
+      "forbidden": [
+        "Refusing the 3-people quest",
+        "Ayaka fighting the player"
+      ],
+      "emotional_register": "duty, reluctance, empathy",
+      "exit_when": [
+        "Player agrees to meet the three victims."
+      ],
+      "exit_keywords": [
+        "player agrees to meet the three victims."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.07",
+      "title": "The Lost Visions: Tejima",
+      "required_npcs": [
+        "Tejima"
+      ],
+      "location": "Konda Village",
+      "must_happen": [
+        "Player finds a man who lost his Vision. He has lost all memory of the person he was waiting for in the village.",
+        "Player reads his diary and realizes losing a Vision strips a person's deepest ambition and the memories tied to it."
+      ],
+      "canon_dialogue_hooks": [
+        "Tejima: \"I... feel like I shouldn't leave. But I don't remember who I'm waiting for.\""
+      ],
+      "player_freedom": [
+        "How they relate the pain of lost memory to their lost sibling."
+      ],
+      "forbidden": [
+        "Player attacks Tejima.",
+        "The Vision is returned (it's embedded in the statue)."
+      ],
+      "emotional_register": "melancholy, tragic, horror",
+      "exit_when": [
+        "Player moves on to the next victim."
+      ],
+      "exit_keywords": [
+        "player moves on to the next victim."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.08",
+      "title": "The Lost Visions: Kurosawa",
+      "required_npcs": [
+        "Kurosawa"
+      ],
+      "location": "Inazuma City",
+      "must_happen": [
+        "Player meets a samurai who lost his Vision. He has forgotten why he went into massive debt.",
+        "Player discovers he went into debt to buy food for the poor, but his own amnesia makes the angry public think he's a thief.",
+        "They clear his name but cannot heal his mind."
+      ],
+      "canon_dialogue_hooks": [
+        "Kurosawa: \"Why did I do it? Was I insane?\""
+      ],
+      "player_freedom": [
+        "Fighting the angry mob (verbally or physically)."
+      ],
+      "forbidden": [
+        "Player pays off all his debt magically."
+      ],
+      "emotional_register": "injustice, psychological loss",
+      "exit_when": [
+        "Player moves to the final victim."
+      ],
+      "exit_keywords": [
+        "player moves to the final victim."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.09",
+      "title": "The Lost Visions: The Swordmaster",
+      "required_npcs": [
+        "Domon"
+      ],
+      "location": "Meikyou Shisui Art Dojo",
+      "must_happen": [
+        "Player finds a legendary swordmaster who lost his Vision.",
+        "He is actively going insane from the psychological weight.",
+        "His disciples are desperately trying to help him."
+      ],
+      "canon_dialogue_hooks": [
+        "Domon: *Ranting incoherently about loss and defeat*"
+      ],
+      "player_freedom": [
+        "Consoling the students."
+      ],
+      "forbidden": [
+        "Healing Domon completely."
+      ],
+      "emotional_register": "madness, pity",
+      "exit_when": [
+        "Player returns to Ayaka."
+      ],
+      "exit_keywords": [
+        "player returns to ayaka."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.10",
+      "title": "The White Heron Takes Flight",
+      "required_npcs": [
+        "Ayaka"
+      ],
+      "location": "Kamisato Estate",
+      "must_happen": [
+        "The player, moved by the victims, agrees to fight the Vision Hunt Decree.",
+        "Ayaka finally steps out from behind her screen.",
+        "Ayaka and the player spend a night out at a festival together.",
+        "Ayaka dances for the player in the river and gives them a hairpin."
+      ],
+      "canon_dialogue_hooks": [
+        "Ayaka: \"Please... keep your eyes on me.\""
+      ],
+      "player_freedom": [
+        "Roleplaying the date/festival.",
+        "Reaction to the dance."
+      ],
+      "forbidden": [
+        "Rejecting Ayaka's gift."
+      ],
+      "emotional_register": "romantic, peaceful, bittersweet",
+      "exit_when": [
+        "The festival ends and the real work begins."
+      ],
+      "exit_keywords": [
+        "the festival ends and the real work begins."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.11",
+      "title": "A Flower Blooms in a Prison",
+      "required_npcs": [
+        "Yoimiya"
+      ],
+      "location": "Hanamizaka / Police Station",
+      "must_happen": [
+        "Player teams up with Yoimiya, a fireworks maker.",
+        "They break into a Tenryou Commission prison to rescue Master Masakatsu (who was making fake Visions to protect people).",
+        "They fight through the facility and rescue him."
+      ],
+      "canon_dialogue_hooks": [
+        "Yoimiya: \"Let's light this place up!\""
+      ],
+      "player_freedom": [
+        "Stealth vs loud approach."
+      ],
+      "forbidden": [
+        "Letting Masakatsu die."
+      ],
+      "emotional_register": "action, heist, rebellion",
+      "exit_when": [
+        "The escape is successful."
+      ],
+      "exit_keywords": [
+        "the escape is successful."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.12",
+      "title": "The Hundredth Vision",
+      "required_npcs": [
+        "Thoma",
+        "Raiden Shogun",
+        "Paimon"
+      ],
+      "location": "Statue of the Omnipresent God",
+      "must_happen": [
+        "The Tenryou Commission captures Thoma.",
+        "He is chosen to be the 100th Vision taken in a public ceremony overseen by the Raiden Shogun.",
+        "Player bursts into the ceremony and snatches Thoma's Vision before the statue claims it.",
+        "The Raiden Shogun descends from the sky."
+      ],
+      "canon_dialogue_hooks": [
+        "Raiden Shogun: \"Your exception... is an enemy of Eternity.\""
+      ],
+      "player_freedom": [
+        "The bravado of the interruption."
+      ],
+      "forbidden": [
+        "Thoma loses his Vision permanently.",
+        "Player escapes without a fight."
+      ],
+      "emotional_register": "climax, pure terror",
+      "exit_when": [
+        "The Shogun draws her sword."
+      ],
+      "exit_keywords": [
+        "the shogun draws her sword."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.13",
+      "title": "The Plane of Euthymia",
+      "required_npcs": [
+        "Raiden Shogun"
+      ],
+      "location": "Plane of Euthymia",
+      "must_happen": [
+        "The Shogun drags the player into her inner world.",
+        "An unwinnable boss fight ensues.",
+        "Player is 'Vision Hunted', locking their elemental skills.",
+        "Player is defeated and cast out of the realm."
+      ],
+      "canon_dialogue_hooks": [
+        "Raiden Shogun: \"I will inlay you upon this statue.\""
+      ],
+      "player_freedom": [
+        "How long they survive before getting crushed."
+      ],
+      "forbidden": [
+        "Winning the fight."
+      ],
+      "emotional_register": "overwhelming power disparity",
+      "exit_when": [
+        "Player is kicked out to the physical world."
+      ],
+      "exit_keywords": [
+        "player is kicked out to the physical world."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.14",
+      "title": "Flight from the Shogun",
+      "required_npcs": [
+        "Thoma",
+        "Raiden Shogun"
+      ],
+      "location": "Statue of the Omnipresent God",
+      "must_happen": [
+        "The Shogun prepares to execute the unconscious player with the Musou no Hitotachi.",
+        "Thoma breaks free, throws a spear at the Shogun, and grabs the player.",
+        "They flee the city in the chaos."
+      ],
+      "canon_dialogue_hooks": [
+        "Thoma: \"Wake up! We have to go, now!\""
+      ],
+      "player_freedom": [
+        "The desperate escape path."
+      ],
+      "forbidden": [
+        "The Shogun pursues them outside the city (she is bound by rules/geography)."
+      ],
+      "emotional_register": "panic, survival",
+      "exit_when": [
+        "Player and Thoma escape Narukami Island."
+      ],
+      "exit_keywords": [
+        "player and thoma escape narukami island."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.15",
+      "title": "The Resistance Camp",
+      "required_npcs": [
+        "Gorou",
+        "Teppei"
+      ],
+      "location": "Tatarasuna / Yashiori Island",
+      "must_happen": [
+        "Player travels to the battlefront.",
+        "They meet Gorou, general of the Sangonomiya Resistance.",
+        "They befriend Teppei, a zealous but weak grunt in the resistance.",
+        "Player fights off a Shogunate ambush."
+      ],
+      "canon_dialogue_hooks": [
+        "Gorou: \"If you stand against the Vision Hunt Decree, you are a brother in arms!\""
+      ],
+      "player_freedom": [
+        "Attitude toward the ragtag resistance.",
+        "Bonding with Teppei."
+      ],
+      "forbidden": [
+        "Attacking Gorou.",
+        "Ignoring the ambush."
+      ],
+      "emotional_register": "war, camaraderie, underdog",
+      "exit_when": [
+        "Gorou accepts the player into their ranks."
+      ],
+      "exit_keywords": [
+        "gorou accepts the player into their ranks."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.16",
+      "title": "Swordfish II",
+      "required_npcs": [
+        "Kokomi",
+        "Teppei"
+      ],
+      "location": "Watatsumi Island",
+      "must_happen": [
+        "Player meets the Divine Priestess, Kokomi.",
+        "She promotes the player to Captain of the Swordfish II special ops squad.",
+        "Teppei is jealous but proud, vowing to catch up to the player's rank.",
+        "Player leads a successful raid on a Shogunate supply line."
+      ],
+      "canon_dialogue_hooks": [
+        "Kokomi: \"To survive against the Shogunate, we must outthink them at every turn.\""
+      ],
+      "player_freedom": [
+        "Tactical choices in the raid.",
+        "Encouragement/rivalry with Teppei."
+      ],
+      "forbidden": [
+        "Player refuses the captaincy."
+      ],
+      "emotional_register": "tactical, leadership, pride",
+      "exit_when": [
+        "The mission succeeds and they return to camp."
+      ],
+      "exit_keywords": [
+        "the mission succeeds and they return to camp."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.17",
+      "title": "The Cost of Power",
+      "required_npcs": [
+        "Gorou",
+        "Teppei"
+      ],
+      "location": "Resistance Camp",
+      "must_happen": [
+        "The resistance suddenly starts winning battles easily.",
+        "Player finds Gorou panicked: soldiers are rapidly aging and falling severely ill.",
+        "Player finds Teppei. He has aged 50 years. He was using a 'secret weapon' given by mysterious sponsors (the Fatui)."
+      ],
+      "canon_dialogue_hooks": [
+        "Teppei: \"I... finally caught up to you... didn't I?\""
+      ],
+      "player_freedom": [
+        "Emotional reaction to Teppei's state (anger, sorrow)."
+      ],
+      "forbidden": [
+        "Healing Teppei.",
+        "Knowing it was Fatui before this moment."
+      ],
+      "emotional_register": "tragedy, horror, blind rage",
+      "exit_when": [
+        "Teppei dies and player discovers the 'secret weapons' are Fatui Delusions."
+      ],
+      "exit_keywords": [
+        "teppei dies and player discovers the 'secret weapons' are fatui delusions."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.18",
+      "title": "The Delusion Factory",
+      "required_npcs": [
+        "Scaramouche"
+      ],
+      "location": "Yashiori Island (Underground)",
+      "must_happen": [
+        "Player storms the Fatui Delusion Factory in a rage.",
+        "They murder their way through the guards.",
+        "They confront Scaramouche (The Balladeer), who mocks Teppei's death and human frailty.",
+        "The player is overcome by the corrupted miasma in the factory and passes out."
+      ],
+      "canon_dialogue_hooks": [
+        "Scaramouche: \"It's just how things are. Human life is worthless. He just wanted a moment of glory.\""
+      ],
+      "player_freedom": [
+        "Brutality in the factory.",
+        "Dialogue options (screaming vs silent fury)."
+      ],
+      "forbidden": [
+        "Fighting or defeating Scaramouche.",
+        "Player stays awake."
+      ],
+      "emotional_register": "hate, fury, powerlessness",
+      "exit_when": [
+        "Player passes out completely."
+      ],
+      "exit_keywords": [
+        "player passes out completely."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.19",
+      "title": "The Guji of the Grand Shrine",
+      "required_npcs": [
+        "Yae Miko",
+        "Paimon"
+      ],
+      "location": "Grand Narukami Shrine",
+      "must_happen": [
+        "Player wakes up in the shrine.",
+        "Yae Miko explains she traded the Electro Gnosis to Scaramouche for the player's life.",
+        "Yae explains that 'the Shogun' is a puppet; the real Archon, Ei, meditates inside the sword to preserve Eternity."
+      ],
+      "canon_dialogue_hooks": [
+        "Yae Miko: \"Well, well... aren't you a mess. I had to give up something quite precious to save you.\""
+      ],
+      "player_freedom": [
+        "Reaction to the loss of the Gnosis.",
+        "Reaction to the puppet reveal."
+      ],
+      "forbidden": [
+        "Attacking Yae.",
+        "Refusing to believe her."
+      ],
+      "emotional_register": "revelation, mystic, cynical humor",
+      "exit_when": [
+        "Player agrees to help Yae Miko 'wake up' her old friend Ei."
+      ],
+      "exit_keywords": [
+        "player agrees to help yae miko 'wake up' her old friend ei."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.20",
+      "title": "Anti-Raiden Shogun Training",
+      "required_npcs": [
+        "Yae Miko"
+      ],
+      "location": "Mt. Yougou",
+      "must_happen": [
+        "Yae forces the player to run an obstacle course simulating the Shogun's attacks.",
+        "Player fails multiple times and complains.",
+        "Yae brutally forces them until they master dodging the lightning strikes."
+      ],
+      "canon_dialogue_hooks": [
+        "Yae Miko: \"Come now, the real Shogun won't give you warnings. Dodge!\""
+      ],
+      "player_freedom": [
+        "Complaining about the training.",
+        "Gameplay performance in the simulation."
+      ],
+      "forbidden": [
+        "Skipping the training entirely.",
+        "Yae Miko takes it easy on them."
+      ],
+      "emotional_register": "frustration, grinding, preparation",
+      "exit_when": [
+        "The training is complete."
+      ],
+      "exit_keywords": [
+        "the training is complete."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.21",
+      "title": "Proof of Treason",
+      "required_npcs": [
+        "Sayu",
+        "Kujou Sara"
+      ],
+      "location": "Tenryou Commission HQ",
+      "must_happen": [
+        "Sayu (the ninja) steals documents from the Tenryou Commission.",
+        "The documents prove the head of the Kujou Clan is colluding with the Fatui to prolong the war and profit.",
+        "Player presents the evidence to Kujou Sara (the loyal general).",
+        "Sara snaps and storms off to Tenshukaku to confront her adoptive father and the Shogun."
+      ],
+      "canon_dialogue_hooks": [
+        "Sara: \"This... this is treason! My clan has betrayed the Almighty Shogun!\""
+      ],
+      "player_freedom": [
+        "Stealth approach for Sayu.",
+        "How they confront Sara."
+      ],
+      "forbidden": [
+        "Sara refuses to believe the evidence."
+      ],
+      "emotional_register": "tense intrigue, shattered loyalty",
+      "exit_when": [
+        "Player follows Sara to Tenshukaku."
+      ],
+      "exit_keywords": [
+        "player follows sara to tenshukaku."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.22",
+      "title": "Duel Before the Throne",
+      "required_npcs": [
+        "Kujou Sara",
+        "La Signora",
+        "Raiden Shogun"
+      ],
+      "location": "Tenshukaku",
+      "must_happen": [
+        "Player enters the throne room.",
+        "Sara is unconscious on the floor, beaten by La Signora.",
+        "Signora mocks the player.",
+        "Player officially challenges Signora to a duel before the throne. Signora accepts.",
+        "The Shogun oversees the duel."
+      ],
+      "canon_dialogue_hooks": [
+        "Signora: \"You challenge me? I am a Fatui Harbinger. You are nothing.\"",
+        "Raiden Shogun: \"The rules of the duel dictate that the loser shall perish. Proceed.\""
+      ],
+      "player_freedom": [
+        "Reason for the duel (revenge for Venti, revenge for Teppei, or saving Inazuma)."
+      ],
+      "forbidden": [
+        "The Shogun stops the duel.",
+        "Player loses."
+      ],
+      "emotional_register": "high stakes, vengeance, operatic",
+      "exit_when": [
+        "Player defeats Signora's Crimson Witch of Flames form."
+      ],
+      "exit_keywords": [
+        "player defeats signora's crimson witch of flames form."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.23",
+      "title": "The Execution",
+      "required_npcs": [
+        "La Signora",
+        "Raiden Shogun"
+      ],
+      "location": "Tenshukaku",
+      "must_happen": [
+        "Signora is defeated and begs for her life, threatening the Shogun with the Tsaritsa's wrath.",
+        "The Shogun effortlessly executes La Signora, deleting her in a flash of lightning.",
+        "The Shogun allows the player to leave Tenshukaku alive, as victors of the duel."
+      ],
+      "canon_dialogue_hooks": [
+        "Signora: \"I am a Snezhnayan diplomat! You cannot—\"",
+        "Raiden Shogun: \"Enemy of eternity.\""
+      ],
+      "player_freedom": [
+        "Player's reaction to the sudden, brutal execution."
+      ],
+      "forbidden": [
+        "Player saves Signora.",
+        "Signora escapes."
+      ],
+      "emotional_register": "shock, awe, terrifying power",
+      "exit_when": [
+        "Player slowly walks out of the gate."
+      ],
+      "exit_keywords": [
+        "player slowly walks out of the gate."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.24",
+      "title": "The Musou no Hitotachi",
+      "required_npcs": [
+        "Raiden Shogun",
+        "Kazuha",
+        "Paimon"
+      ],
+      "location": "Tenshukaku Gates",
+      "must_happen": [
+        "Player steps past the gate. The Shogun considers this the end of her grace period and attacks from behind.",
+        "Grasping the player's dormant ambition, the dead Vision Kazuha carries suddenly ignites.",
+        "Kazuha leaps in and blocks the strike that kills gods.",
+        "The resistance army storms the gates."
+      ],
+      "canon_dialogue_hooks": [
+        "Kazuha: \"There will always be those who dare to brave the lightning's glow!\""
+      ],
+      "player_freedom": [
+        "The slow walk to the gate (gameplay feels heavy, ringing ears)."
+      ],
+      "forbidden": [
+        "Kazuha dies.",
+        "The Shogun's strike lands on the player."
+      ],
+      "emotional_register": "epic, transcendent heroics",
+      "exit_when": [
+        "The Shogun's defense is broken, and player pulls her into the Plane of Euthymia."
+      ],
+      "exit_keywords": [
+        "the shogun's defense is broken, and player pulls her into the plane of euthymia."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.25",
+      "title": "The Archon's Inner Sanctum",
+      "required_npcs": [
+        "Ei",
+        "Yae Miko"
+      ],
+      "location": "Plane of Euthymia",
+      "must_happen": [
+        "Player fights Ei inside her mind.",
+        "Player struggles until Yae Miko enters the plane via the omamori she gave the player.",
+        "Yae talks sense into Ei while the player fights her powered by the myriad ambitions on the statue."
+      ],
+      "canon_dialogue_hooks": [
+        "Ei: \"Why do you fight? Why do you insist on changing the eternal?\"",
+        "Yae Miko: \"Your eternity has only brought suffering. Look at the desires of your people!\""
+      ],
+      "player_freedom": [
+        "Combat strategy.",
+        "Dialogue responses to Ei's philosophy."
+      ],
+      "forbidden": [
+        "Ei dies.",
+        "Yae fails to show up."
+      ],
+      "emotional_register": "catharsis, philosophical resolution",
+      "exit_when": [
+        "Ei's will is broken and she stops the fight."
+      ],
+      "exit_keywords": [
+        "ei's will is broken and she stops the fight."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.26",
+      "title": "Abolishing the Decree",
+      "required_npcs": [
+        "Ei",
+        "Yae Miko"
+      ],
+      "location": "Tenshukaku / Inazuma City",
+      "must_happen": [
+        "Ei returns to reality and officially abolishes the Vision Hunt Decree.",
+        "Visions are returned to their owners (including Thoma).",
+        "The Fatui are driven out of Inazuma.",
+        "Peace talks with Watatsumi Island begin."
+      ],
+      "canon_dialogue_hooks": [
+        "Ei: \"Perhaps... Inazuma must move forward, even if it changes.\""
+      ],
+      "player_freedom": [
+        "Watching the people celebrate."
+      ],
+      "forbidden": [
+        "The Resistance executes the Shogun."
+      ],
+      "emotional_register": "relief, spring after winter",
+      "exit_when": [
+        "Inazuma enters a state of recovery."
+      ],
+      "exit_keywords": [
+        "inazuma enters a state of recovery."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "inazuma.27",
+      "title": "The Omamori's Truth",
+      "required_npcs": [
+        "Yae Miko"
+      ],
+      "location": "Grand Narukami Shrine",
+      "must_happen": [
+        "Player visits Yae Miko.",
+        "Yae lore drops: Scaramouche is a prototype puppet created by Ei.",
+        "Yae tells them to go to Sumeru, the Nation of Wisdom, next."
+      ],
+      "canon_dialogue_hooks": [
+        "Yae Miko: \"Scaramouche... he was the prototype. And now he has the Gnosis.\"",
+        "Yae Miko: \"Sumeru is a place where knowledge is managed as a resource.\""
+      ],
+      "player_freedom": [
+        "Asking questions about the sibling or the Fatui."
+      ],
+      "forbidden": [
+        "Refusing to go to Sumeru."
+      ],
+      "emotional_register": "lore-heavy, wrapping up",
+      "exit_when": [
+        "Player prepares to leave Inazuma."
+      ],
+      "exit_keywords": [
+        "player prepares to leave inazuma."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "The player's emotional reaction to Teppei's death and Signora's execution are huge roleplay vectors."
+}

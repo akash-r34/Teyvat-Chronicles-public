@@ -1,0 +1,949 @@
+{
+  "region": "Liyue",
+  "archon_quest_chapter": "I",
+  "archon_quest_acts": [
+    "I",
+    "II",
+    "III",
+    "IV"
+  ],
+  "version": "1.1",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Liyue is a story about contracts, the death of gods, and the transition of power from adepti to mortals. It is a political thriller with mystery elements.",
+  "emotional_register_default": "suspense, grandeur, legacy",
+  "named_npcs_introduced": [
+    "Zhongli",
+    "Childe",
+    "Ningguang",
+    "Keqing",
+    "Ganyu",
+    "Xiao",
+    "Shenhe",
+    "Yelan"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "celestia",
+      "archon_war_truth"
+    ],
+    "hint_only": [
+      "khaenriah",
+      "abyss_order_truth"
+    ]
+  },
+  "beats": [
+    {
+      "id": "liyue.01",
+      "title": "Welcome to Liyue",
+      "required_npcs": [
+        "Paimon"
+      ],
+      "location": "Liyue Harbor Gates",
+      "must_happen": [
+        "Player arrives in Liyue Harbor.",
+        "Paimon hype about the food and the Rite of Descension."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Wow, Liyue Harbor is huge! Let's go see the Rite of Descension!\""
+      ],
+      "player_freedom": [
+        "Exploring the harbor, talking to merchants."
+      ],
+      "forbidden": [
+        "Directly attacking Millelith.",
+        "Skipping to the terrace immediately."
+      ],
+      "emotional_register": "wonder, excitement",
+      "exit_when": [
+        "Player heads to Yujing Terrace."
+      ],
+      "exit_keywords": [
+        "player heads to yujing terrace."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.02",
+      "title": "Making Wishes",
+      "required_npcs": [
+        "Paimon",
+        "Local Citizens"
+      ],
+      "location": "Yujing Terrace",
+      "must_happen": [
+        "Player mingles with the crowd.",
+        "They light some incense to make a wish to Rex Lapis.",
+        "They hear rumors about the Qixing's increasing power."
+      ],
+      "canon_dialogue_hooks": [
+        "Citizen: \"May Rex Lapis bless my business this year!\""
+      ],
+      "player_freedom": [
+        "What kind of wish the player makes internally."
+      ],
+      "forbidden": [
+        "Interrupting the ceremony early."
+      ],
+      "emotional_register": "spiritual, festive",
+      "exit_when": [
+        "Ningguang arrives to start the Rite."
+      ],
+      "exit_keywords": [
+        "ningguang arrives to start the rite."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.03",
+      "title": "The Rite of Descension",
+      "required_npcs": [
+        "Ningguang"
+      ],
+      "location": "Yujing Terrace",
+      "must_happen": [
+        "Ningguang summons the Geo Archon.",
+        "The sky darkens.",
+        "Instead of a gentle descent, the Exuvia (dragon corpse) crashes down dead.",
+        "Panic ensues."
+      ],
+      "canon_dialogue_hooks": [
+        "Ningguang: \"The Geo Archon has been murdered! Seal the exits!\""
+      ],
+      "player_freedom": [
+        "Shock/confusion reactions."
+      ],
+      "forbidden": [
+        "Reviving the dragon.",
+        "Fighting Ningguang."
+      ],
+      "emotional_register": "shock, panic",
+      "exit_when": [
+        "Ningguang commands the Millelith to arrest everyone present."
+      ],
+      "exit_keywords": [
+        "ningguang commands the millelith to arrest everyone present."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.04",
+      "title": "Fleeing the Millelith",
+      "required_npcs": [
+        "Millelith Guards"
+      ],
+      "location": "Liyue Harbor Streets",
+      "must_happen": [
+        "Player runs from the Yujing Terrace.",
+        "Stealth section avoiding Millelith patrols."
+      ],
+      "canon_dialogue_hooks": [
+        "Millelith: \"Halt! The assassin is fleeing!\""
+      ],
+      "player_freedom": [
+        "Path taken to escape the terrace."
+      ],
+      "forbidden": [
+        "Player turns themselves in."
+      ],
+      "emotional_register": "tension, stealth",
+      "exit_when": [
+        "Player gets cornered by a patrol."
+      ],
+      "exit_keywords": [
+        "player gets cornered by a patrol."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.05",
+      "title": "Enter the Harbinger",
+      "required_npcs": [
+        "Childe"
+      ],
+      "location": "Liyue Harbor Streets",
+      "must_happen": [
+        "A Millelith patrol corners the player.",
+        "Childe steps in and cleanly takes them out to save the player.",
+        "Childe introduces himself as a Fatui Harbinger."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: \"I am Childe... one of the Eleven Fatui Harbingers. Don't worry, I'm not here to arrest you.\""
+      ],
+      "player_freedom": [
+        "Hostility vs gratitude toward Childe."
+      ],
+      "forbidden": [
+        "Player kills Childe."
+      ],
+      "emotional_register": "suspicious relief",
+      "exit_when": [
+        "Childe invites them to the Northland Bank."
+      ],
+      "exit_keywords": [
+        "childe invites them to the northland bank."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.06",
+      "title": "The Sigil of Permission",
+      "required_npcs": [
+        "Childe"
+      ],
+      "location": "Northland Bank",
+      "must_happen": [
+        "Childe explains the Qixing are framing the player.",
+        "Childe gives the player a 'Sigil of Permission'.",
+        "Childe tells them to seek out the Adepti in Jueyun Karst."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: \"The Adepti won't be happy to hear that their god has been killed by mortals.\""
+      ],
+      "player_freedom": [
+        "Questioning Childe's motives.",
+        "Refusing the sigil temporarily before being forced to accept."
+      ],
+      "forbidden": [
+        "Destroying the sigil."
+      ],
+      "emotional_register": "conspiratorial",
+      "exit_when": [
+        "Player leaves for Jueyun Karst."
+      ],
+      "exit_keywords": [
+        "player leaves for jueyun karst."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.07",
+      "title": "Jueyun Karst",
+      "required_npcs": [
+        "Paimon"
+      ],
+      "location": "Jueyun Karst",
+      "must_happen": [
+        "Player navigates the treacherous peaks.",
+        "They reach the domain of the Adepti.",
+        "They hold up the Sigil to pass through the defensive wards."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Whoa... the clouds look like you can walk on them!\""
+      ],
+      "player_freedom": [
+        "Exploration."
+      ],
+      "forbidden": [
+        "Turning back."
+      ],
+      "emotional_register": "mystical, ancient",
+      "exit_when": [
+        "They arrive at Moon Carver's peak."
+      ],
+      "exit_keywords": [
+        "they arrive at moon carver's peak."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.08",
+      "title": "Meeting Moon Carver",
+      "required_npcs": [
+        "Moon Carver",
+        "Millelith"
+      ],
+      "location": "Mt. Hulao / Jueyun Karst",
+      "must_happen": [
+        "Player meets the stag adeptus Moon Carver.",
+        "Millelith agents ambush them.",
+        "Player fights them off to protect the adeptus.",
+        "Moon Carver is enraged by the news of Rex Lapis' death."
+      ],
+      "canon_dialogue_hooks": [
+        "Moon Carver: \"Assassinated?! The Geo Archon?! How dare the Qixing!\""
+      ],
+      "player_freedom": [
+        "Combat strategy."
+      ],
+      "forbidden": [
+        "Moon Carver attacks player."
+      ],
+      "emotional_register": "righteous anger, ancient power",
+      "exit_when": [
+        "Moon Carver tells them to find the other adepti."
+      ],
+      "exit_keywords": [
+        "moon carver tells them to find the other adepti."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.09",
+      "title": "Mountain Shaper's Domain",
+      "required_npcs": [
+        "Mountain Shaper",
+        "Li Ding"
+      ],
+      "location": "Mt. Hulao",
+      "must_happen": [
+        "Player seeks out Mountain Shaper.",
+        "They find a thief trapped in amber.",
+        "Player frees him, but he proves to be greedy.",
+        "Mountain Shaper appears and judges the mortal."
+      ],
+      "canon_dialogue_hooks": [
+        "Mountain Shaper: \"Ignorant mortals, trespassing on adepti grounds...\""
+      ],
+      "player_freedom": [
+        "Whether to sympathize with the thief or scold him."
+      ],
+      "forbidden": [
+        "Player kills the thief."
+      ],
+      "emotional_register": "judgmental, awe",
+      "exit_when": [
+        "Mountain Shaper hears the news and departs."
+      ],
+      "exit_keywords": [
+        "mountain shaper hears the news and departs."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.10",
+      "title": "Cloud Retainer's Abode",
+      "required_npcs": [
+        "Cloud Retainer"
+      ],
+      "location": "Mt. Aocang",
+      "must_happen": [
+        "Player navigates Cloud Retainer's domain (puzzles).",
+        "They cook an offering at the stone table to summon her.",
+        "Cloud Retainer threatens to crush Liyue Harbor herself."
+      ],
+      "canon_dialogue_hooks": [
+        "Cloud Retainer: \"One shall shatter that harbor to dust!\""
+      ],
+      "player_freedom": [
+        "Dialogue trying to calm her down."
+      ],
+      "forbidden": [
+        "Cloud Retainer attacks player."
+      ],
+      "emotional_register": "wrathful, arrogant",
+      "exit_when": [
+        "Cloud Retainer agrees to wait and consult with the others."
+      ],
+      "exit_keywords": [
+        "cloud retainer agrees to wait and consult with the others."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.11",
+      "title": "The Vigilant Yaksha",
+      "required_npcs": [
+        "Xiao",
+        "Smiley Yanxiao"
+      ],
+      "location": "Wangshu Inn",
+      "must_happen": [
+        "Player goes to meet Xiao on the roof.",
+        "Xiao ignores them initially.",
+        "Player makes Almond Tofu with the inn's chef to bribe him.",
+        "Xiao accepts the offering and hears the news."
+      ],
+      "canon_dialogue_hooks": [
+        "Xiao: \"If you have no business here, leave. The karma of the Yaksha will taint you.\""
+      ],
+      "player_freedom": [
+        "Cooking process. Approach to Xiao's edginess."
+      ],
+      "forbidden": [
+        "Xiao happily chats with player."
+      ],
+      "emotional_register": "melancholy, stoic",
+      "exit_when": [
+        "Xiao departs to meet the other adepti."
+      ],
+      "exit_keywords": [
+        "xiao departs to meet the other adepti."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.12",
+      "title": "Return to the Harbor",
+      "required_npcs": [
+        "Childe",
+        "Zhongli"
+      ],
+      "location": "Liuli Pavilion",
+      "must_happen": [
+        "Player returns to Liyue Harbor.",
+        "Childe treats them to dinner.",
+        "Childe introduces Zhongli, a consultant to the Wangsheng Funeral Parlor.",
+        "Zhongli offers to help clear the player's name by organizing the Rite of Parting."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"Liyue is the city of contracts. We must give the Archon a proper farewell.\""
+      ],
+      "player_freedom": [
+        "Dialogue towards Zhongli's eccentric pedantry.",
+        "Reactions to Childe paying for everything."
+      ],
+      "forbidden": [
+        "Childe refuses to pay."
+      ],
+      "emotional_register": "calm, diplomatic",
+      "exit_when": [
+        "Player agrees to help Zhongli."
+      ],
+      "exit_keywords": [
+        "player agrees to help zhongli."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.13",
+      "title": "Purchasing Noctilucous Jade",
+      "required_npcs": [
+        "Zhongli",
+        "Shitou"
+      ],
+      "location": "Liyue Harbor",
+      "must_happen": [
+        "Zhongli requires high-quality jade.",
+        "Player visits a merchant and must judge the quality using elemental sight/heat.",
+        "Zhongli tries to buy all three but has no money. Childe's funds are used."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"I'll take them all.\" Paimon: \"Wait, who's paying?!\""
+      ],
+      "player_freedom": [
+        "Teasing Zhongli about his lack of Mora."
+      ],
+      "forbidden": [
+        "Player pays entirely out of pocket."
+      ],
+      "emotional_register": "comedic, lore-building",
+      "exit_when": [
+        "Jade is secured."
+      ],
+      "exit_keywords": [
+        "jade is secured."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.14",
+      "title": "Silk Flowers for the Gods",
+      "required_npcs": [
+        "Zhongli",
+        "Verr Goldet"
+      ],
+      "location": "Yujing Terrace / Wangshu Inn",
+      "must_happen": [
+        "Zhongli needs specific Silk Flowers.",
+        "They need to be pressed into perfume for the Archon.",
+        "Player visits Wangshu Inn to consult the boss on traditional methods."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"Rex Lapis favored a specific scent... one fit for older souls.\""
+      ],
+      "player_freedom": [
+        "The process of gathering the flowers."
+      ],
+      "forbidden": [
+        "Skipping the perfume making."
+      ],
+      "emotional_register": "traditional, calm",
+      "exit_when": [
+        "Perfume is offered to the statue."
+      ],
+      "exit_keywords": [
+        "perfume is offered to the statue."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.15",
+      "title": "Madame Ping and the Cleansing Bell",
+      "required_npcs": [
+        "Madame Ping"
+      ],
+      "location": "Yujing Terrace",
+      "must_happen": [
+        "Zhongli sends the player to an old lady to borrow the Cleansing Bell.",
+        "Madame Ping reveals she involves adeptal arts. Her teapot is a domain.",
+        "Player clears the teapot domain to retrieve the bell."
+      ],
+      "canon_dialogue_hooks": [
+        "Madame Ping: \"Ah, you need the bell. Just hop inside my teapot and grab it, would you?\""
+      ],
+      "player_freedom": [
+        "Reactions to the magical teapot."
+      ],
+      "forbidden": [
+        "Player steals the teapot.",
+        "Madame Ping is attacked."
+      ],
+      "emotional_register": "whimsical, surprising",
+      "exit_when": [
+        "Player returns the bell to Zhongli."
+      ],
+      "exit_keywords": [
+        "player returns the bell to zhongli."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.16",
+      "title": "Kites and Workers",
+      "required_npcs": [
+        "Zhongli",
+        "Granny Shan"
+      ],
+      "location": "Liyue Harbor Streets",
+      "must_happen": [
+        "Zhongli insists on highly specific kites.",
+        "Zhongli again forgets his Mora. Childe's funds are used.",
+        "Player must hire workers for the Rite, but must negotiate fair wages."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"It is an old tradition. The kites must carry the exact seven colors...\""
+      ],
+      "player_freedom": [
+        "Negotiation minigame with the workers."
+      ],
+      "forbidden": [
+        "Paying zero Mora."
+      ],
+      "emotional_register": "slice of life",
+      "exit_when": [
+        "Preparations are mostly finished."
+      ],
+      "exit_keywords": [
+        "preparations are mostly finished."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.17",
+      "title": "Everlasting Lord of Arcane Wisdom",
+      "required_npcs": [
+        "Zhongli"
+      ],
+      "location": "Third-Round Knockout (Tavern)",
+      "must_happen": [
+        "Zhongli buys the player dinner.",
+        "He tells the story of Ningguang and the history of Liyue.",
+        "They are approached by Ganyu, an emissary of the Qixing."
+      ],
+      "canon_dialogue_hooks": [
+        "Ganyu: \"I bring an invitation from Lady Ningguang. She wishes to meet you at the Jade Chamber.\""
+      ],
+      "player_freedom": [
+        "Attitude toward Ganyu."
+      ],
+      "forbidden": [
+        "Player denies the invitation entirely."
+      ],
+      "emotional_register": "lore-heavy, mysterious",
+      "exit_when": [
+        "Dinner concludes and they plan to visit the Jade Chamber."
+      ],
+      "exit_keywords": [
+        "dinner concludes and they plan to visit the jade chamber."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.18",
+      "title": "Finding the Jade Chamber",
+      "required_npcs": [
+        "Keqing"
+      ],
+      "location": "Mt. Tianheng",
+      "must_happen": [
+        "Player tries to find a way up to the floating palace.",
+        "They meet Keqing investigating a balista.",
+        "Keqing helps them find the guide and shares her skepticism of the Adepti."
+      ],
+      "canon_dialogue_hooks": [
+        "Keqing: \"The time of the Adepti has passed. If Liyue is to survive, mortals must take control.\""
+      ],
+      "player_freedom": [
+        "Agreeing or disagreeing with Keqing's philosophy."
+      ],
+      "forbidden": [
+        "Attacking Keqing."
+      ],
+      "emotional_register": "philosophical, logistical",
+      "exit_when": [
+        "Player boards the Jade Chamber."
+      ],
+      "exit_keywords": [
+        "player boards the jade chamber."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.19",
+      "title": "The Tianquan's Domain",
+      "required_npcs": [
+        "Ningguang",
+        "Paimon"
+      ],
+      "location": "The Jade Chamber",
+      "must_happen": [
+        "Player meets Ningguang.",
+        "Ningguang explains she hid the Exuvia to protect it from the Fatui.",
+        "She shares her massive wall of intelligence with the player."
+      ],
+      "canon_dialogue_hooks": [
+        "Ningguang: \"The Fatui are acting in the shadows. Childe is manipulating you to find the Exuvia.\""
+      ],
+      "player_freedom": [
+        "Trusting Ningguang vs being skeptical."
+      ],
+      "forbidden": [
+        "Stealing from the Jade Chamber."
+      ],
+      "emotional_register": "intrigue, high society",
+      "exit_when": [
+        "Player leaves the Jade Chamber to investigate the Fatui."
+      ],
+      "exit_keywords": [
+        "player leaves the jade chamber to investigate the fatui."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.20",
+      "title": "The Guizhong Ballista",
+      "required_npcs": [
+        "Zhongli"
+      ],
+      "location": "Mt. Tianheng",
+      "must_happen": [
+        "Player meets Zhongli to inspect the ancient Guizhong Ballista.",
+        "They fix it.",
+        "Treasure Hoarders attack to try and steal components. Player defeats them."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"An ancient mechanism... left by an old friend.\""
+      ],
+      "player_freedom": [
+        "Combat strategy.",
+        "Asking Zhongli about Guizhong."
+      ],
+      "forbidden": [
+        "Ballista is destroyed."
+      ],
+      "emotional_register": "nostalgic, action",
+      "exit_when": [
+        "Ballista is repaired."
+      ],
+      "exit_keywords": [
+        "ballista is repaired."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.21",
+      "title": "The Golden House Intrusion",
+      "required_npcs": [
+        "Millelith",
+        "Childe"
+      ],
+      "location": "The Golden House",
+      "must_happen": [
+        "Player follows the clues to the Golden House, where Liyue's Mora is minted.",
+        "The Millelith guards are knocked out.",
+        "Player enters and finds Childe standing before the Exuvia."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: \"You've been playing at being a detective... but you led me right to the prize.\""
+      ],
+      "player_freedom": [
+        "Dialogue with Childe (anger vs disappointment)."
+      ],
+      "forbidden": [
+        "Player lets Childe take it without a fight."
+      ],
+      "emotional_register": "betrayal, tension",
+      "exit_when": [
+        "The fight begins."
+      ],
+      "exit_keywords": [
+        "the fight begins."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.22",
+      "title": "Clash of the Harbinger",
+      "required_npcs": [
+        "Childe"
+      ],
+      "location": "The Golden House",
+      "must_happen": [
+        "Player fights Childe (Hydro Vision).",
+        "Childe realizes the Gnosis isn't in the Exuvia.",
+        "He uses his Electro Delusion (Phase 2).",
+        "He accuses the player of taking it.",
+        "He uses his Foul Legacy transformation (Phase 3)."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: \"You beat me to it! ...Hand over the Gnosis!\""
+      ],
+      "player_freedom": [
+        "Combat maneuvering.",
+        "Attempting to explain they don't have it."
+      ],
+      "forbidden": [
+        "Childe dies in the fight."
+      ],
+      "emotional_register": "epic boss battle",
+      "exit_when": [
+        "Childe is defeated and reverts to human form."
+      ],
+      "exit_keywords": [
+        "childe is defeated and reverts to human form."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.23",
+      "title": "Awakening the Overlord",
+      "required_npcs": [
+        "Childe",
+        "Osial (Offscreen)"
+      ],
+      "location": "The Golden House",
+      "must_happen": [
+        "Childe realizes Rex Lapis faked his death.",
+        "To force Rex Lapis out, Childe uses Sigils of Permission to awaken Osial, Overlord of the Vortex.",
+        "Childe escapes. The Golden House begins to flood internally."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: \"Let's see if the Geo Archon will sit back and watch his city drown!\""
+      ],
+      "player_freedom": [
+        "Player's reaction to the massive disaster forming."
+      ],
+      "forbidden": [
+        "Stopping the summoning.",
+        "Catching Childe."
+      ],
+      "emotional_register": "horror, urgency",
+      "exit_when": [
+        "Player rushes to the Jade Chamber."
+      ],
+      "exit_keywords": [
+        "player rushes to the jade chamber."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.24",
+      "title": "A United Front",
+      "required_npcs": [
+        "Ningguang",
+        "Keqing",
+        "Xiao",
+        "Ganyu",
+        "Madame Ping"
+      ],
+      "location": "Jade Chamber (over ocean)",
+      "must_happen": [
+        "Player reaches the Jade Chamber.",
+        "The Adepti and the Qixing are arguing but are forced to unite.",
+        "The Adepti empower the Guizhong Ballistae generated on the Jade Chamber to shoot at Osial."
+      ],
+      "canon_dialogue_hooks": [
+        "Xiao: \"We will lend you our strength. Do not let us down, mortal!\""
+      ],
+      "player_freedom": [
+        "Inspiring the troops."
+      ],
+      "forbidden": [
+        "Adepti turn against the Qixing here."
+      ],
+      "emotional_register": "epic team-up",
+      "exit_when": [
+        "The Fatui attack the Jade Chamber."
+      ],
+      "exit_keywords": [
+        "the fatui attack the jade chamber."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.25",
+      "title": "Defending the Chamber",
+      "required_npcs": [
+        "Adepti",
+        "Fatui Enemies"
+      ],
+      "location": "Jade Chamber Platforms",
+      "must_happen": [
+        "Fatui teleport in to destroy the Ballistae.",
+        "Madame Ping, Xiao, and Ganyu grant the player massive lore-accurate buffs.",
+        "Player fights waves of Fatui to defend the weapons."
+      ],
+      "canon_dialogue_hooks": [
+        "Madame Ping: \"Let this old woman grant you some vigor!\""
+      ],
+      "player_freedom": [
+        "Combat leveraging the insane buffs.",
+        "Target prioritization."
+      ],
+      "forbidden": [
+        "Ballistae are completely destroyed prematurely."
+      ],
+      "emotional_register": "heroic, overpowering",
+      "exit_when": [
+        "Osial attacks the Jade Chamber directly, destroying the weapons."
+      ],
+      "exit_keywords": [
+        "osial attacks the jade chamber directly, destroying the weapons."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.26",
+      "title": "The Ultimate Sacrifice",
+      "required_npcs": [
+        "Ningguang",
+        "Osial"
+      ],
+      "location": "Jade Chamber / Freefall",
+      "must_happen": [
+        "The Ballistae are destroyed. Osial is about to wipe out Liyue Harbor.",
+        "Ningguang decides to sacrifice the Jade Chamber.",
+        "Player strikes the chamber with downward force, dropping it on Osial.",
+        "Osial is securely sealed. Xiao saves the falling player."
+      ],
+      "canon_dialogue_hooks": [
+        "Ningguang: \"I'll sacrifice my Jade Chamber... to seal this god once more!\"",
+        "Xiao: *Catches the player silently*"
+      ],
+      "player_freedom": [
+        "Player's conviction when breaking the core."
+      ],
+      "forbidden": [
+        "Ningguang dies.",
+        "The Jade Chamber is saved."
+      ],
+      "emotional_register": "sacrifice, breathtaking climax",
+      "exit_when": [
+        "The threat is over and the group returns to Liyue Harbor."
+      ],
+      "exit_keywords": [
+        "the threat is over and the group returns to liyue harbor."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.27",
+      "title": "The God of Contracts",
+      "required_npcs": [
+        "Zhongli",
+        "La Signora",
+        "Childe"
+      ],
+      "location": "Northland Bank",
+      "must_happen": [
+        "Player seeks out Zhongli.",
+        "They find him in the Northland Bank with La Signora and Childe.",
+        "Zhongli reveals he IS Rex Lapis.",
+        "Zhongli hands his Gnosis to Signora as part of a 'contract to end all contracts'."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"The age of the adepti has passed, and the era of humanity has begun.\"",
+        "Childe: \"You tricked me too?!\""
+      ],
+      "player_freedom": [
+        "Player can be angry they were used, confused, or accepting."
+      ],
+      "forbidden": [
+        "Player attacks Signora successfully.",
+        "Zhongli stops the trade."
+      ],
+      "emotional_register": "betrayal/revelation, philosophical",
+      "exit_when": [
+        "Signora leaves with the Gnosis."
+      ],
+      "exit_keywords": [
+        "signora leaves with the gnosis."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.28",
+      "title": "The Rite of Parting",
+      "required_npcs": [
+        "Zhongli",
+        "Ningguang",
+        "Keqing"
+      ],
+      "location": "Yujing Terrace",
+      "must_happen": [
+        "The Rite of Parting is finally held for Rex Lapis.",
+        "The Qixing officially declare Rex Lapis returned to the heavens (hiding his assassination entirely).",
+        "Zhongli watches as an ordinary citizen."
+      ],
+      "canon_dialogue_hooks": [
+        "Keqing: \"We will rule Liyue ourselves from now on.\""
+      ],
+      "player_freedom": [
+        "Reflecting on the ending of an era."
+      ],
+      "forbidden": [
+        "Player reveals Zhongli's identity to the crowd."
+      ],
+      "emotional_register": "bittersweet closure",
+      "exit_when": [
+        "The Rite ends."
+      ],
+      "exit_keywords": [
+        "the rite ends."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "liyue.29",
+      "title": "The Next Destination",
+      "required_npcs": [
+        "Zhongli"
+      ],
+      "location": "Liyue Harbor Street",
+      "must_happen": [
+        "Player talks to Zhongli privately one last time.",
+        "Zhongli explains the situation in Inazuma: the Raiden Shogun is confiscating Visions and has sealed the borders.",
+        "Player resolves to go to Inazuma next."
+      ],
+      "canon_dialogue_hooks": [
+        "Zhongli: \"Inazuma is closed. The Electro Archon, Baal, pursues eternity...\""
+      ],
+      "player_freedom": [
+        "Asking any lingering lore questions."
+      ],
+      "forbidden": [
+        "Refusing to go to Inazuma.",
+        "Zhongli joining the party permanently."
+      ],
+      "emotional_register": "calm, anticipatory",
+      "exit_when": [
+        "Player sets their sights on Inazuma."
+      ],
+      "exit_keywords": [
+        "player sets their sights on inazuma."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "Liyue emphasizes the rift between the ancient Adepti and the modern Qixing. The player's alignment (trusting Childe vs Ningguang vs Adepti) can flavor dialogue, though the plot points remain fixed."
+}

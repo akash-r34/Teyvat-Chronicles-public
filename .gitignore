@@ -1,0 +1,42 @@
+# Dependencies / build
+node_modules/
+build/
+dist/
+coverage/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Env / secrets (defense in depth)
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+gcp-key*.json
+
+# Local SQLite + sidecars
+*.db
+*.db-shm
+*.db-wal
+*.db_bkp*
+data/teyvat.db*
+
+# Backups
+*.bak
+*_bkp*

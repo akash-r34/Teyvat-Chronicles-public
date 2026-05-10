@@ -1,0 +1,903 @@
+{
+  "region": "Fontaine",
+  "archon_quest_chapter": "IV",
+  "archon_quest_acts": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V"
+  ],
+  "version": "4.2",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Fontaine is the nation of Justice, characterized by theatrical trials, a looming apocalyptic prophecy, and the concept of original sin. Tone is dramatic, operatic, and deeply emotional.",
+  "emotional_register_default": "dramatic, suspenseful, tragic",
+  "named_npcs_introduced": [
+    "Furina",
+    "Neuvillette",
+    "Navia",
+    "Lyney",
+    "Lynette",
+    "Wriothesley",
+    "Clorinde",
+    "Arlecchino",
+    "Childe",
+    "Focalors"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "final_days",
+      "seven_sovereigns"
+    ],
+    "hint_only": [
+      "night_kingdom_truth"
+    ]
+  },
+  "beats": [
+    {
+      "id": "fontaine.01",
+      "title": "Welcome to the Nation of Justice",
+      "required_npcs": [
+        "Paimon",
+        "Lyney",
+        "Lynette",
+        "Furina"
+      ],
+      "location": "Romaritime Harbor",
+      "must_happen": [
+        "Player arrives in Fontaine.",
+        "They meet magicians Lyney and Lynette.",
+        "Furina, the Hydro Archon, makes a wildly dramatic, theatrical entrance to 'welcome' (and confront) the player.",
+        "Furina challenges the player to a duel in court, but backs down when Lyney defuses it."
+      ],
+      "canon_dialogue_hooks": [
+        "Furina: \"My people! The star of the show has arrived!\""
+      ],
+      "player_freedom": [
+        "Mocking Furina's dramatic flair.",
+        "Observing the bizarre justice system."
+      ],
+      "forbidden": [
+        "Attacking Furina.",
+        "Refusing to enter Fontaine."
+      ],
+      "emotional_register": "theatrical, comedic, slightly unhinged",
+      "exit_when": [
+        "Player boards the Aquabus to the Court of Fontaine."
+      ],
+      "exit_keywords": [
+        "player boards the aquabus to the court of fontaine."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.02",
+      "title": "The Prophecy of Water",
+      "required_npcs": [
+        "Lyney"
+      ],
+      "location": "Aquabus to the City",
+      "must_happen": [
+        "Lyney explains the Fontaine prophecy: The people will all dissolve into the sea, leaving the Hydro Archon crying alone on her throne.",
+        "They arrive in the massive steampunk/water city of Fontaine."
+      ],
+      "canon_dialogue_hooks": [
+        "Lyney: \"It's a prophecy everyone here knows. The water levels are already rising...\""
+      ],
+      "player_freedom": [
+        "Looking at the scenery.",
+        "Discussing the absurdity of the prophecy."
+      ],
+      "forbidden": [
+        "Jumping off the aquabus instantly."
+      ],
+      "emotional_register": "foreboding, awe",
+      "exit_when": [
+        "Player arrives at the Court of Fontaine."
+      ],
+      "exit_keywords": [
+        "player arrives at the court of fontaine."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.03",
+      "title": "The Opera Epiclese",
+      "required_npcs": [
+        "Lyney",
+        "Neuvillette",
+        "Furina"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "Player attends Lyney's magic show at the massive opera house, which doubles as a courthouse.",
+        "They are introduced to Neuvillette (Chief Justice) and the Oratrice Mecanique d'Analyse Cardinale (the magical judgment machine).",
+        "The magic trick goes wrong. A water tank crashes, killing an assistant named Cowell."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"Order in the court. The performance is suspended.\""
+      ],
+      "player_freedom": [
+        "Reactions to the sudden death."
+      ],
+      "forbidden": [
+        "Player stops the accident.",
+        "Lyney runs away."
+      ],
+      "emotional_register": "shock, tragedy, spectacle",
+      "exit_when": [
+        "The police lock down the Opera House."
+      ],
+      "exit_keywords": [
+        "the police lock down the opera house."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.04",
+      "title": "The Accusation",
+      "required_npcs": [
+        "Furina",
+        "Lyney"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "Furina instantly accuses Lyney of murder, playing to the crowd for drama.",
+        "Player objects and agrees to be Lyney's defense attorney in tomorrow's trial.",
+        "Player gains investigative rights."
+      ],
+      "canon_dialogue_hooks": [
+        "Furina: \"I accuse the great magician, Lyney, of murder!\""
+      ],
+      "player_freedom": [
+        "Hesitance vs enthusiasm to defend Lyney."
+      ],
+      "forbidden": [
+        "Refusing to defend.",
+        "Furina drops the charges."
+      ],
+      "emotional_register": "legal drama, determination",
+      "exit_when": [
+        "Player begins searching the Opera House for clues."
+      ],
+      "exit_keywords": [
+        "player begins searching the opera house for clues."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.05",
+      "title": "The Secret of the Orphanage",
+      "required_npcs": [
+        "Lyney",
+        "Navia"
+      ],
+      "location": "Opera House Underground",
+      "must_happen": [
+        "Player investigates the magic trick tunnels.",
+        "They are assisted by Navia (President of Spina di Rosula).",
+        "Player discovers Lyney and Lynette are from the House of the Hearth (Fatui).",
+        "Player is extremely angry at Lyney for lying to them."
+      ],
+      "canon_dialogue_hooks": [
+        "Lyney: \"I didn't tell you because... I knew you'd look at me exactly the way you're looking at me right now.\""
+      ],
+      "player_freedom": [
+        "Expressing anger/betrayal toward Lyney."
+      ],
+      "forbidden": [
+        "Forgiving Lyney instantly without conflict.",
+        "Dropping him as a client."
+      ],
+      "emotional_register": "betrayal, tension, investigation",
+      "exit_when": [
+        "All evidence is collected and the trial begins."
+      ],
+      "exit_keywords": [
+        "all evidence is collected and the trial begins."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.06",
+      "title": "Ace Attorney",
+      "required_npcs": [
+        "Furina",
+        "Neuvillette",
+        "Lyney"
+      ],
+      "location": "Opera Epiclese (Courtroom)",
+      "must_happen": [
+        "The trial begins. Furina acts as the prosecution, demanding spectacle.",
+        "Player uses a minigame to refute Furina's claims, pointing out contradictions in the timeline.",
+        "Player deduces that the real victim was a girl who 'dissolved' in Primordial Seawater, and Cowell was the killer who accidentally died in the cover-up."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Objection!\""
+      ],
+      "player_freedom": [
+        "Selecting the right evidence.",
+        "Smugness when defeating Furina's logic."
+      ],
+      "forbidden": [
+        "Lyney is found guilty.",
+        "Neuvillette yells at the player."
+      ],
+      "emotional_register": "intellectual victory, courtroom hype",
+      "exit_when": [
+        "The true culprit's accomplice in the stands is exposed."
+      ],
+      "exit_keywords": [
+        "the true culprit's accomplice in the stands is exposed."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.07",
+      "title": "The Water That Dissolves Sins",
+      "required_npcs": [
+        "Marcel/Vigneire",
+        "Neuvillette"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "The accomplice is cornered but refuses to talk.",
+        "Suddenly, they turn into a puddle of water. They dissolved due to Primordial Seawater exposure to keep them silent.",
+        "The crowd panics, realizing the prophecy is real.",
+        "The Oratrice finds Lyney NOT GUILTY."
+      ],
+      "canon_dialogue_hooks": [
+        "Crowd: \"He vanished! Just like the prophecy!\""
+      ],
+      "player_freedom": [
+        "Shock at the on-screen death."
+      ],
+      "forbidden": [
+        "Stopping the dissolving."
+      ],
+      "emotional_register": "horror, realization",
+      "exit_when": [
+        "Court is adjourned. Player walks outside."
+      ],
+      "exit_keywords": [
+        "court is adjourned. player walks outside."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.08",
+      "title": "Spina di Rosula",
+      "required_npcs": [
+        "Navia",
+        "Childe"
+      ],
+      "location": "Court of Fontaine",
+      "must_happen": [
+        "Navia asks the player to help her solve the serial disappearances of young women (which killed her father).",
+        "They run into Childe, who is in Fontaine looking for a fight. He acts friendly but chaotic.",
+        "Player agrees to be Navia's partner."
+      ],
+      "canon_dialogue_hooks": [
+        "Navia: \"We call ourselves the Spina di Rosula. Basically... the mafia with a heart of gold.\""
+      ],
+      "player_freedom": [
+        "Banter with Childe.",
+        "Accepting Navia's partnership."
+      ],
+      "forbidden": [
+        "Fighting Childe here.",
+        "Refusing Navia's quest forever."
+      ],
+      "emotional_register": "noir detective, partnership",
+      "exit_when": [
+        "The investigation begins in earnest."
+      ],
+      "exit_keywords": [
+        "the investigation begins in earnest."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.09",
+      "title": "The Mastermind Caught",
+      "required_npcs": [
+        "Navia",
+        "Marcel",
+        "Neuvillette"
+      ],
+      "location": "Synthesis Station / Opera Epiclese",
+      "must_happen": [
+        "Through deep investigation, Navia deduces Marcel (a friendly merchant) is the serial killer 'Vacher'.",
+        "They hold a sudden trial against him.",
+        "Marcel breaks down and confesses he was dissolving women trying to bring his dead lover back as an Oceanid.",
+        "Marcel goes to jail (and subsequently dies trying to talk to his lover's spirit)."
+      ],
+      "canon_dialogue_hooks": [
+        "Navia: \"You betrayed my father. You betrayed us all.\""
+      ],
+      "player_freedom": [
+        "No sympathy vs some pity for Marcel's madness."
+      ],
+      "forbidden": [
+        "Marcel escapes.",
+        "Navia kills him directly."
+      ],
+      "emotional_register": "closure, tragedy, justice",
+      "exit_when": [
+        "Navia visits her father's grave."
+      ],
+      "exit_keywords": [
+        "navia visits her father's grave."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.10",
+      "title": "A Flaw in the Machine",
+      "required_npcs": [
+        "Childe",
+        "Neuvillette"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "Since Marcel was the true culprit, Childe (who was a suspect) is cleared of all charges.",
+        "However, the Oratrice Mecanique suddenly delivers a verdict for Childe: GUILTY.",
+        "Everyone is shocked. Childe is furious, uses his Foul Legacy form to attack the guards.",
+        "Neuvillette instantly one-shots Childe, subduing him with overwhelming aquatic power, and sends him to prison."
+      ],
+      "canon_dialogue_hooks": [
+        "Oratrice (Reading): \"Tartaglia... Guilty.\"",
+        "Childe: *Screaming in rage*"
+      ],
+      "player_freedom": [
+        "Watching the absolute chaotic beatdown."
+      ],
+      "forbidden": [
+        "Player fights Neuvillette.",
+        "Player saves Childe."
+      ],
+      "emotional_register": "confusion, awe of Neuvillette's power",
+      "exit_when": [
+        "Childe is taken to the Fortress of Meropide."
+      ],
+      "exit_keywords": [
+        "childe is taken to the fortress of meropide."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.11",
+      "title": "The Knave",
+      "required_npcs": [
+        "Arlecchino",
+        "Furina",
+        "Neuvillette"
+      ],
+      "location": "Palais Mermonia",
+      "must_happen": [
+        "Arlecchino (The Knave, 4th Harbinger) arrives in Fontaine, demanding answers about Childe.",
+        "Furina is visibly terrified of her.",
+        "Arlecchino pressures the government but acts perfectly polite.",
+        "Neuvillette asks the player to infiltrate the prison to find Childe."
+      ],
+      "canon_dialogue_hooks": [
+        "Arlecchino: \"I only seek the truth of what happened to my colleague. Is that so unreasonable, Miss Furina?\""
+      ],
+      "player_freedom": [
+        "Distrusting Arlecchino.",
+        "Agreeing to Neuvillette's plan."
+      ],
+      "forbidden": [
+        "Attacking Arlecchino.",
+        "Refusing to go to prison."
+      ],
+      "emotional_register": "political tension, dread",
+      "exit_when": [
+        "Player gets 'arrested' intentionally."
+      ],
+      "exit_keywords": [
+        "player gets 'arrested' intentionally."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.12",
+      "title": "The Fortress of Meropide",
+      "required_npcs": [
+        "Wriothesley",
+        "Sigewinne"
+      ],
+      "location": "Fortress of Meropide",
+      "must_happen": [
+        "Player arrives in the massive underwater prison.",
+        "They meet the Duke, Wriothesley, who runs the place like a factory town.",
+        "They must learn the Credit Coupon system and do menial labor for days to gather intel."
+      ],
+      "canon_dialogue_hooks": [
+        "Wriothesley: \"Welcome to Meropide. You'll find it's a society of its own down here.\""
+      ],
+      "player_freedom": [
+        "Grinding factory tasks.",
+        "Talking to inmates."
+      ],
+      "forbidden": [
+        "Breaking out immediately.",
+        "Killing guards."
+      ],
+      "emotional_register": "oppressive, industrial, stealth",
+      "exit_when": [
+        "Player discovers 'hidden rules' the inmates fear."
+      ],
+      "exit_keywords": [
+        "player discovers 'hidden rules' the inmates fear."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.13",
+      "title": "Prison Break... Almost",
+      "required_npcs": [
+        "Lyney",
+        "Wriothesley",
+        "Freminet"
+      ],
+      "location": "Meropide Pipeline",
+      "must_happen": [
+        "Player teams up with Lyney (who is looking for his siblings).",
+        "They try to investigate the restricted zone.",
+        "Wriothesley catches them easily. He knew they were spies the whole time.",
+        "He reveals Lyney's brother, Freminet, went into a pipe that is fully flooded with Primordial Seawater."
+      ],
+      "canon_dialogue_hooks": [
+        "Wriothesley: \"I prefer to let people hang themselves with their own rope.\""
+      ],
+      "player_freedom": [
+        "Pleading for Freminet's life.",
+        "Anger at Wriothesley's game."
+      ],
+      "forbidden": [
+        "Fighting and defeating Wriothesley."
+      ],
+      "emotional_register": "outsmarted, ticking clock",
+      "exit_when": [
+        "Clorinde returns with a dying Freminet."
+      ],
+      "exit_keywords": [
+        "clorinde returns with a dying freminet."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.14",
+      "title": "The Seal Breaks",
+      "required_npcs": [
+        "Wriothesley",
+        "Neuvillette",
+        "Clorinde"
+      ],
+      "location": "Meropide Deep Zone",
+      "must_happen": [
+        "The massive seal at the bottom of the prison bursts. Pure Primordial Seawater floods in.",
+        "Wriothesley uses his Cryo vision to freeze the sea temporarily, holding off a national disaster.",
+        "He screams for the player to get Neuvillette.",
+        "Player rushes to the surface, and Neuvillette dives down. Neuvillette uses his immense power to push the sea back and reseal the sluice."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"Let the tides... recede!\""
+      ],
+      "player_freedom": [
+        "The frantic rush to the surface."
+      ],
+      "forbidden": [
+        "Player sealing it themselves.",
+        "Wriothesley dies."
+      ],
+      "emotional_register": "disaster, epic scale, cinematic",
+      "exit_when": [
+        "The immediate danger is passed, but the seal is temporary."
+      ],
+      "exit_keywords": [
+        "the immediate danger is passed, but the seal is temporary."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.15",
+      "title": "The Dragon of Water",
+      "required_npcs": [
+        "Neuvillette"
+      ],
+      "location": "Fortress of Meropide / Office",
+      "must_happen": [
+        "Neuvillette confesses his true identity to the player: He is the Hydro Dragon Sovereign.",
+        "He states he does not technically have full power because a portion of it belongs to the Archon (Focalors).",
+        "Player realizes Neuvillette might be the only one who can forgive the original sin of Fontaine."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"I am the Hydro Dragon. And when a dragon weeps, the skies rain.\""
+      ],
+      "player_freedom": [
+        "Awe at his identity.",
+        "Asking him about the other dragons."
+      ],
+      "forbidden": [
+        "Calling him a monster.",
+        "Leaking the secret to everyone."
+      ],
+      "emotional_register": "mythic revelation, melancholy",
+      "exit_when": [
+        "Player leaves the prison and meets Navia."
+      ],
+      "exit_keywords": [
+        "player leaves the prison and meets navia."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.16",
+      "title": "Tragedy in Poisson",
+      "required_npcs": [
+        "Navia",
+        "Melus",
+        "Silver"
+      ],
+      "location": "Poisson",
+      "must_happen": [
+        "Player returns to the surface to find Poisson (Navia's hometown) has flooded with Primordial seawater.",
+        "Many people have dissolved. Navia is in shock.",
+        "Her two best bodyguards, Melus and Silver, sacrificed themselves to save others and dissolved.",
+        "Player comforts a broken Navia."
+      ],
+      "canon_dialogue_hooks": [
+        "Navia: \"They're gone... they just melted away into the water...\""
+      ],
+      "player_freedom": [
+        "How they comfort Navia.",
+        "Rage against the prophecy."
+      ],
+      "forbidden": [
+        "Joking around.",
+        "Saving Melus/Silver magically."
+      ],
+      "emotional_register": "deep grief, horror, devastation",
+      "exit_when": [
+        "A summit of all Fontaine leaders is called."
+      ],
+      "exit_keywords": [
+        "a summit of all fontaine leaders is called."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.17",
+      "title": "The Archon's Secret",
+      "required_npcs": [
+        "Arlecchino",
+        "Furina",
+        "Player"
+      ],
+      "location": "Fontaine Streets",
+      "must_happen": [
+        "Arlecchino corners Furina, nearly attacking her, and discovers something terrifying to her: Furina possesses absolutely no divine power or Gnosis.",
+        "Furina is a completely ordinary, cursed human playing a role.",
+        "The player catches Furina sobbing alone, but Furina refuses to break character, terrified the prophecy will instantly trigger if she does."
+      ],
+      "canon_dialogue_hooks": [
+        "Furina: \"I am the Archon! I have everything under control!\" (sobbing quietly)"
+      ],
+      "player_freedom": [
+        "Trying to gently force Furina to talk.",
+        "Pitying her."
+      ],
+      "forbidden": [
+        "Furina confesses her secret here.",
+        "Player beats her up."
+      ],
+      "emotional_register": "psychological torment, extreme pity",
+      "exit_when": [
+        "The player decides Furina must be forced to trial to reveal the truth."
+      ],
+      "exit_keywords": [
+        "the player decides furina must be forced to trial to reveal the truth."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.18",
+      "title": "The Trap is Set",
+      "required_npcs": [
+        "Neuvillette",
+        "Navia",
+        "Lyney",
+        "Furina"
+      ],
+      "location": "Poisson / Opera Epiclese",
+      "must_happen": [
+        "The group formulates a plan: Create a fake emergency to lure Furina into a magic box, transporting her directly onto the defendant's stand at the Opera Epiclese.",
+        "They execute the trap perfectly.",
+        "The entire nation watches as their Archon is put on trial."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"Furina, you stand accused of deceiving the people. You are not the Hydro Archon.\""
+      ],
+      "player_freedom": [
+        "Executing the trap with precision.",
+        "Guilt over traumatizing her."
+      ],
+      "forbidden": [
+        "Furina escapes the trap.",
+        "Neuvillette stops the trial."
+      ],
+      "emotional_register": "legal thriller, harsh reality",
+      "exit_when": [
+        "The trial begins."
+      ],
+      "exit_keywords": [
+        "the trial begins."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.19",
+      "title": "The Trial of Furina",
+      "required_npcs": [
+        "Furina",
+        "Player",
+        "Neuvillette"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "Player acts as the prosecution against Furina.",
+        "They prove she is an ordinary human cursed with immortality.",
+        "The Oratrice renders a verdict on the Hydro Archon, but not for fraud. The verdict for the Hydro Archon is: DEATH.",
+        "Before anyone can process this, the prophecy triggers. A massive rift opens."
+      ],
+      "canon_dialogue_hooks": [
+        "Oratrice: \"The Hydro Archon... Guilty. The sentence is... Death.\""
+      ],
+      "player_freedom": [
+        "The ruthless cross-examination of Furina.",
+        "Shock at the death penalty."
+      ],
+      "forbidden": [
+        "Dropping the charges."
+      ],
+      "emotional_register": "heartbreaking, utter chaos",
+      "exit_when": [
+        "The All-Devouring Narwhal breaches the Opera House."
+      ],
+      "exit_keywords": [
+        "the all-devouring narwhal breaches the opera house."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.20",
+      "title": "The All-Devouring Narwhal",
+      "required_npcs": [
+        "Childe",
+        "Neuvillette"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "A massive cosmic whale bursts from the floor, having eaten the Primordial sea.",
+        "Childe falls out of the rift in foul legacy form, having fought the whale alone for weeks.",
+        "Neuvillette and the player push the whale back into the rift but fail to kill it."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: *Unconscious, falling*",
+        "Neuvillette: \"This beast feeds on the energy of this world!\""
+      ],
+      "player_freedom": [
+        "Combat engagement.",
+        "Saving Childe's falling body."
+      ],
+      "forbidden": [
+        "Killing the whale here.",
+        "Childe waking up."
+      ],
+      "emotional_register": "kaiju battle, sheer panic",
+      "exit_when": [
+        "The whale retreats into the rift."
+      ],
+      "exit_keywords": [
+        "the whale retreats into the rift."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.21",
+      "title": "The Execution of Focalors",
+      "required_npcs": [
+        "Neuvillette",
+        "Focalors"
+      ],
+      "location": "The Inner World (Oratrice Core)",
+      "must_happen": [
+        "Neuvillette's consciousness is pulled into the Oratrice.",
+        "He meets Focalors, the true divine Hydro Archon. She explains she separated her divinity (herself) from her humanity (Furina) 500 years ago.",
+        "She built the Oratrice to gather enough energy to execute HERSELF, destroying the Archon throne, thereby returning full authority to the Hydro Dragon (Neuvillette) so he could save the people.",
+        "A massive guillotine of energy drops, killing Focalors."
+      ],
+      "canon_dialogue_hooks": [
+        "Focalors: \"Farewell, Neuvillette. I hope you've enjoyed the part you played these five hundred years.\""
+      ],
+      "player_freedom": [
+        "Player does not play this bit; they watch the cinematic cutscene."
+      ],
+      "forbidden": [
+        "Stopping the guillotine.",
+        "Focalors survives."
+      ],
+      "emotional_register": "operatic tragedy, ultimate sacrifice, masterpiece",
+      "exit_when": [
+        "Neuvillette gains his full Dragon Sovereign power."
+      ],
+      "exit_keywords": [
+        "neuvillette gains his full dragon sovereign power."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.22",
+      "title": "Forgiveness of Sins",
+      "required_npcs": [
+        "Neuvillette"
+      ],
+      "location": "Opera Epiclese",
+      "must_happen": [
+        "Neuvillette returns to reality with full godhood.",
+        "He pardons the people of Fontaine of their original sin (turning them from Oceanids into true humans), meaning they can no longer dissolve.",
+        "He then flies up to face the Narwhal."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"I, Neuvillette, absolve you of your original sin!\""
+      ],
+      "player_freedom": [
+        "Standing in awe."
+      ],
+      "forbidden": [
+        "Interrupting his speech."
+      ],
+      "emotional_register": "triumph, majesty",
+      "exit_when": [
+        "Player and Neuvillette enter the spatial rift."
+      ],
+      "exit_keywords": [
+        "player and neuvillette enter the spatial rift."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.23",
+      "title": "Into the Abyss",
+      "required_npcs": [
+        "Neuvillette"
+      ],
+      "location": "The Deep Sea Rift",
+      "must_happen": [
+        "Player and Neuvillette fight the All-Devouring Narwhal boss in a cosmic arena.",
+        "They destroy its stomach and defeat it.",
+        "The combat requires breaking the Narwhal's hostility with Pneuma/Ousia."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"We must sever its connection to the star-sea!\""
+      ],
+      "player_freedom": [
+        "Boss combat strategy.",
+        "Using Arkhe alignments."
+      ],
+      "forbidden": [
+        "Player solos it without Neuvillette's dialogue buffs."
+      ],
+      "emotional_register": "final boss hype, cosmic scale",
+      "exit_when": [
+        "The Narwhal is defeated and shrinks."
+      ],
+      "exit_keywords": [
+        "the narwhal is defeated and shrinks."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.24",
+      "title": "The Master of the Abyss",
+      "required_npcs": [
+        "Skirk",
+        "Neuvillette",
+        "Childe"
+      ],
+      "location": "The Deep Sea Rift",
+      "must_happen": [
+        "A woman named Skirk (Childe's master) appears, effortlessly shrinks the Narwhal, and throws it into her pocket.",
+        "She reveals her master is 'Surtalogi', the Foul.",
+        "She throws an unconscious Childe through a portal back to his home and leaves."
+      ],
+      "canon_dialogue_hooks": [
+        "Skirk: \"Ah, my pet has caused you some trouble. I apologize for my negligence.\""
+      ],
+      "player_freedom": [
+        "Asking Skirk lore questions (she ignores most of them).",
+        "Shock at her power level."
+      ],
+      "forbidden": [
+        "Fighting Skirk.",
+        "Stopping her from taking the whale."
+      ],
+      "emotional_register": "insignificance, massive lore drops",
+      "exit_when": [
+        "Player and Neuvillette return to Fontaine."
+      ],
+      "exit_keywords": [
+        "player and neuvillette return to fontaine."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.25",
+      "title": "The Great Flood",
+      "required_npcs": [
+        "Wriothesley",
+        "Navia",
+        "Furina"
+      ],
+      "location": "Court of Fontaine",
+      "must_happen": [
+        "The prophecy's final beat hits: Fontaine floods completely.",
+        "However, because Neuvillette turned them into true humans, nobody dissolves. They just swim or get on boats.",
+        "Furina cries on her 'throne' realizing her 500-year torture was a success. The people are saved."
+      ],
+      "canon_dialogue_hooks": [
+        "Furina: *Crying in relief as the water recedes*"
+      ],
+      "player_freedom": [
+        "Watching the cinematic survivors."
+      ],
+      "forbidden": [
+        "People dissolving here."
+      ],
+      "emotional_register": "happy ending, beautiful relief",
+      "exit_when": [
+        "The waters recede."
+      ],
+      "exit_keywords": [
+        "the waters recede."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "fontaine.26",
+      "title": "The Sovereign's Farewell",
+      "required_npcs": [
+        "Neuvillette",
+        "Arlecchino"
+      ],
+      "location": "Palais Mermonia",
+      "must_happen": [
+        "Epilogue. Furina has moved out to live a quiet human life.",
+        "Neuvillette reveals he gave the Hydro Gnosis to Arlecchino as diplomatic leverage, officially severing ties with Celestia.",
+        "Neuvillette lore drops about the Descenders, the Gnosis being made from the Third Descender's remains, and the nation of Natlan (dragons and war)."
+      ],
+      "canon_dialogue_hooks": [
+        "Neuvillette: \"The Gnoses... are the remains of the Third Descender. Be careful when you go to Natlan, the Nation of War.\""
+      ],
+      "player_freedom": [
+        "Asking all lore questions.",
+        "Saying goodbye."
+      ],
+      "forbidden": [
+        "Demanding the Gnosis back.",
+        "Refusing to go to Natlan."
+      ],
+      "emotional_register": "lore-heavy, peaceful conclusion",
+      "exit_when": [
+        "Player wraps up their business in Fontaine."
+      ],
+      "exit_keywords": [
+        "player wraps up their business in fontaine."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "The revelation of Furina's 500-year suffering is the emotional core. Emphasize the theatricality of the trials throughout."
+}

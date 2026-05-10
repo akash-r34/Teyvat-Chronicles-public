@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "region": { "type": "string" },
+    "archon_quest_chapter": { "type": "string" },
+    "archon_quest_acts": { "type": "array", "items": { "type": "string" } },
+    "version": { "type": "string" },
+    "last_reviewed": { "type": "string", "format": "date" },
+    "summary_for_director": { "type": "string" },
+    "emotional_register_default": { "type": "string" },
+    "named_npcs_introduced": { "type": "array", "items": { "type": "string" } },
+    "lore_unlocks_region_grants": {
+      "type": "object",
+      "properties": {
+        "named": { "type": "array", "items": { "type": "string" } },
+        "hint_only": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "region_unfinished": { "type": "boolean" },
+    "beats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "anchor_quest": { "type": "string" },
+          "required_npcs": { "type": "array", "items": { "type": "string" } },
+          "location": { "type": "string" },
+          "must_happen": { "type": "array", "items": { "type": "string" } },
+          "canon_dialogue_hooks": { "type": "array", "items": { "type": "string" } },
+          "player_freedom": { "type": "array", "items": { "type": "string" } },
+          "forbidden": { "type": "array", "items": { "type": "string" } },
+          "emotional_register": { "type": "string" },
+          "exit_when": { "type": "array", "items": { "type": "string" } },
+          "unlocks_named": { "type": "array", "items": { "type": "string" } },
+          "unlocks_hint": { "type": "array", "items": { "type": "string" } },
+          "sets_flags_optional": { "type": "array", "items": { "type": "string" } },
+          "estimated_turns": { "type": "string" }
+        },
+        "required": ["id", "title", "must_happen", "player_freedom", "forbidden", "exit_when"]
+      }
+    },
+    "branch_notes": { "type": "string" }
+  },
+  "required": ["region", "version", "last_reviewed", "beats"]
+}

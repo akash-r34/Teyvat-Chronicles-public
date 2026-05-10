@@ -1,0 +1,57 @@
+{
+  "region": "Interludes",
+  "archon_quest_chapter": "Various",
+  "archon_quest_acts": [],
+  "version": "5.0",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Side stories and expansions that unlock based on region completion.",
+  "emotional_register_default": "mystery, varied",
+  "named_npcs_introduced": [
+    "Albedo",
+    "Dainsleif",
+    "Yelan"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "abyss_order_truth",
+      "second_who_came"
+    ],
+    "hint_only": []
+  },
+  "beats": [
+    {
+      "id": "interlude.chasm.01",
+      "title": "Perilous Trail",
+      "anchor_quest": "Perilous Trail",
+      "required_npcs": [
+        "Xiao",
+        "Yelan"
+      ],
+      "location": "The Chasm",
+      "must_happen": [
+        "The player descends into the Chasm.",
+        "They face time dilation and confront their deepest fears."
+      ],
+      "canon_dialogue_hooks": [],
+      "player_freedom": [
+        "How they respond to the phantoms."
+      ],
+      "forbidden": [
+        "The player cannot die."
+      ],
+      "emotional_register": "claustrophobic",
+      "exit_when": [
+        "The party escapes the Chasm."
+      ],
+      "unlocks_named": [],
+      "unlocks_hint": [],
+      "sets_flags_optional": [],
+      "estimated_turns": "3",
+      "exit_keywords": [
+        "the party escapes the chasm."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "These can be dynamically selected if the player strays from the main path."
+}

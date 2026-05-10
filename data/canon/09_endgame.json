@@ -1,0 +1,47 @@
+{
+  "region": "Endgame",
+  "archon_quest_chapter": "VII",
+  "archon_quest_acts": [],
+  "version": "6.0",
+  "last_reviewed": "2026-04-25",
+  "region_unfinished": true,
+  "summary_for_director": "Placeholder for the ultimate confrontation with Celestia and the Heavenly Principles.",
+  "emotional_register_default": "apocalyptic",
+  "named_npcs_introduced": [],
+  "lore_unlocks_region_grants": {
+    "named": [],
+    "hint_only": []
+  },
+  "beats": [
+    {
+      "id": "endgame.01",
+      "title": "The Loom of Fate",
+      "anchor_quest": "Unknown",
+      "required_npcs": [],
+      "location": "Khaenri'ah / Celestia",
+      "must_happen": [
+        "The player prepares for the final war."
+      ],
+      "canon_dialogue_hooks": [],
+      "player_freedom": [
+        "Everything."
+      ],
+      "forbidden": [
+        "Do not invent a definitive end to the Genshin IP."
+      ],
+      "emotional_register": "tense",
+      "exit_when": [
+        "Never."
+      ],
+      "unlocks_named": [],
+      "unlocks_hint": [],
+      "sets_flags_optional": [],
+      "estimated_turns": "100",
+      "exit_keywords": [
+        "never."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "Do not railroad."
+}

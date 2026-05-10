@@ -1,0 +1,965 @@
+{
+  "region": "Sumeru",
+  "archon_quest_chapter": "III",
+  "archon_quest_acts": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V"
+  ],
+  "version": "3.2",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Sumeru is the nation of wisdom, divided between rainforest and desert. The Akademiya rules with the Akasha system. This chapter introduces heavy cosmic lore, dreams, memory manipulation, and the overarching truth of the world.",
+  "emotional_register_default": "mystery, psychological, intellectual",
+  "named_npcs_introduced": [
+    "Tighnari",
+    "Collei",
+    "Dunyarzad",
+    "Nilou",
+    "Alhaitham",
+    "Dehya",
+    "Cyno",
+    "Nahida",
+    "Dottore",
+    "Scaramouche"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "false_sky",
+      "heavenly_principles",
+      "descenders",
+      "irminsul",
+      "forbidden_knowledge"
+    ],
+    "hint_only": [
+      "final_days",
+      "abyss_twin"
+    ]
+  },
+  "beats": [
+    {
+      "id": "sumeru.01",
+      "title": "Through Mists of Smoke",
+      "required_npcs": [
+        "Paimon",
+        "Haypasia"
+      ],
+      "location": "Sumeru Border (The Chasm exit)",
+      "must_happen": [
+        "Player enters Sumeru's rainforest.",
+        "They follow a silent scholar (Haypasia) to a cave.",
+        "The cave is filled with strange incense (Spirit Borneo).",
+        "Player passes out upon inhaling it."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Hey! Are you okay? You just totally passed out!\""
+      ],
+      "player_freedom": [
+        "Initial reaction to the lush environment."
+      ],
+      "forbidden": [
+        "Skipping the incense cave."
+      ],
+      "emotional_register": "mysterious, disorienting",
+      "exit_when": [
+        "Player passes out into a vision."
+      ],
+      "exit_keywords": [
+        "player passes out into a vision."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.02",
+      "title": "A Vision of Irminsul",
+      "required_npcs": [],
+      "location": "Dreamscape (Irminsul)",
+      "must_happen": [
+        "Player sees a massive, glowing upside-down tree.",
+        "They hear a faint, sobbing voice say: 'World... forget me...'",
+        "The vision abruptly ends."
+      ],
+      "canon_dialogue_hooks": [
+        "Mysterious Voice: \"World... forget me...\""
+      ],
+      "player_freedom": [
+        "Attempting to touch the tree."
+      ],
+      "forbidden": [
+        "Understanding the message immediately."
+      ],
+      "emotional_register": "ethereal, sorrowful",
+      "exit_when": [
+        "Player wakes up in reality."
+      ],
+      "exit_keywords": [
+        "player wakes up in reality."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.03",
+      "title": "Gandharva Ville",
+      "required_npcs": [
+        "Tighnari",
+        "Collei"
+      ],
+      "location": "Gandharva Ville",
+      "must_happen": [
+        "Player wakes up under the care of Forest Watchers Tighnari and Collei.",
+        "Tighnari explains they hallucinated because they aren't used to the local flora.",
+        "Collei acts extremely awkward but eager to help."
+      ],
+      "canon_dialogue_hooks": [
+        "Tighnari: \"You're lucky we found you. The jungle is unforgiving to outsiders.\""
+      ],
+      "player_freedom": [
+        "Attitude toward Collei (patient vs dismissive)."
+      ],
+      "forbidden": [
+        "Attacking the Forest Watchers."
+      ],
+      "emotional_register": "safe, warm, educational",
+      "exit_when": [
+        "Player agrees to rest and help around the village."
+      ],
+      "exit_keywords": [
+        "player agrees to rest and help around the village."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.04",
+      "title": "The Withering",
+      "required_npcs": [
+        "Tighnari"
+      ],
+      "location": "Avidya Forest",
+      "must_happen": [
+        "Player accompanies Tighnari to clear a 'Withering Zone'—an area of dying plants and aggressive monsters.",
+        "Tighnari explains the Withering is a symptom of Irminsul's sickness."
+      ],
+      "canon_dialogue_hooks": [
+        "Tighnari: \"The earth itself is rotting here. If we don't clear it, it spreads.\""
+      ],
+      "player_freedom": [
+        "Combat strategy in the Withering (using Dendrogranum)."
+      ],
+      "forbidden": [
+        "Ignoring the Withering entirely."
+      ],
+      "emotional_register": "decay, environmental hazard",
+      "exit_when": [
+        "The Withering zone is cleared."
+      ],
+      "exit_keywords": [
+        "the withering zone is cleared."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.05",
+      "title": "Collei's Secret",
+      "required_npcs": [
+        "Collei",
+        "Tighnari"
+      ],
+      "location": "Gandharva Ville",
+      "must_happen": [
+        "Player discovers Collei suffers from Eleazar, a terminal illness hardening her skin into scales.",
+        "Tighnari explains she was also experimented on by the Fatui (Dottore).",
+        "Player promises to keep her condition a secret so she can live normally."
+      ],
+      "canon_dialogue_hooks": [
+        "Collei: \"Please... I don't want anyone to worry about me.\""
+      ],
+      "player_freedom": [
+        "Comforting Collei."
+      ],
+      "forbidden": [
+        "Curing Eleazar (impossible right now)."
+      ],
+      "emotional_register": "tragic, empathetic",
+      "exit_when": [
+        "Player leaves for Sumeru City."
+      ],
+      "exit_keywords": [
+        "player leaves for sumeru city."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.06",
+      "title": "City of Wisdom",
+      "required_npcs": [
+        "Akademiya Guard"
+      ],
+      "location": "Sumeru City Gates",
+      "must_happen": [
+        "Player enters Sumeru City.",
+        "They receive an 'Akasha Terminal', an earpiece that grants access to the nation's hivemind of knowledge.",
+        "The terminal refuses to answer the player's questions about their sibling."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"It says 'You do not have the clearance to access this information'. What a rip-off!\""
+      ],
+      "player_freedom": [
+        "Asking the terminal random questions."
+      ],
+      "forbidden": [
+        "Breaking the terminal.",
+        "The terminal answering about the sibling."
+      ],
+      "emotional_register": "sci-fi fantasy, bureaucratic",
+      "exit_when": [
+        "Player enters the city proper."
+      ],
+      "exit_keywords": [
+        "player enters the city proper."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.07",
+      "title": "The Devout Follower",
+      "required_npcs": [
+        "Dunyarzad",
+        "Dehya"
+      ],
+      "location": "Sumeru City",
+      "must_happen": [
+        "Player sees street mercenaries harassing a young woman (Dunyarzad).",
+        "Dehya the Flame-Mane, Dunyarzad's bodyguard, steps in and scares them off.",
+        "Dunyarzad reveals she is a devout follower of Lesser Lord Kusanali (the current archon), despite the Akademiya looking down on her."
+      ],
+      "canon_dialogue_hooks": [
+        "Dehya: \"Touch my employer again, and you'll lose the hand.\""
+      ],
+      "player_freedom": [
+        "Helping Dehya intimidate the thugs."
+      ],
+      "forbidden": [
+        "Attacking Dehya."
+      ],
+      "emotional_register": "protective, religious tension",
+      "exit_when": [
+        "Dunyarzad invites them to the Sabzeruz Festival preparations."
+      ],
+      "exit_keywords": [
+        "dunyarzad invites them to the sabzeruz festival preparations."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.08",
+      "title": "Port Ormos & The Scribe",
+      "required_npcs": [
+        "Alhaitham",
+        "Dori"
+      ],
+      "location": "Port Ormos",
+      "must_happen": [
+        "Player goes to Port Ormos to buy illegal canned knowledge.",
+        "They meet Alhaitham, a scribe of the Akademiya, who seems to have his own agenda.",
+        "They meet Dori, a black market merchant, and buy a Divine Knowledge Capsule."
+      ],
+      "canon_dialogue_hooks": [
+        "Alhaitham: \"Knowledge is a resource. And resources are strictly controlled.\""
+      ],
+      "player_freedom": [
+        "Haggling with Dori.",
+        "Distrusting Alhaitham."
+      ],
+      "forbidden": [
+        "Refusing to buy the capsule."
+      ],
+      "emotional_register": "black market intrigue, espionage",
+      "exit_when": [
+        "Player returns to Sumeru City for the festival."
+      ],
+      "exit_keywords": [
+        "player returns to sumeru city for the festival."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.09",
+      "title": "The Sabzeruz Festival",
+      "required_npcs": [
+        "Dunyarzad",
+        "Nilou"
+      ],
+      "location": "Sumeru City",
+      "must_happen": [
+        "Player attends the festival to celebrate Nahida's birthday.",
+        "They buy candies, watch street performances, and meet Nilou, the dancer.",
+        "The Akademiya guards arrive and forcibly shut down the festival, claiming it is a frivolous waste of time.",
+        "Player goes to sleep angry at the Sages."
+      ],
+      "canon_dialogue_hooks": [
+        "Akademiya Sage: \"The pursuit of the arts is a distraction from true wisdom. Shut it down!\""
+      ],
+      "player_freedom": [
+        "Enjoying the festival activities before the shutdown."
+      ],
+      "forbidden": [
+        "Fighting the guards to stop the shutdown (it's a scripted narrative failure)."
+      ],
+      "emotional_register": "joy, abruptly turning to oppression",
+      "exit_when": [
+        "Player goes to sleep."
+      ],
+      "exit_keywords": [
+        "player goes to sleep."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.10",
+      "title": "The Samsara Loop",
+      "required_npcs": [
+        "Paimon",
+        "Dunyarzad"
+      ],
+      "location": "Sumeru City",
+      "must_happen": [
+        "Player wakes up. The day repeats identically.",
+        "Player experiences massive déjà vu.",
+        "They predict dialogue and events, confusing Paimon and Dunyarzad.",
+        "The day ends and repeats again. And again."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Are you okay? You've said that exact sentence before...\""
+      ],
+      "player_freedom": [
+        "Trying to break the loop by doing random things (running away, eating certain foods)."
+      ],
+      "forbidden": [
+        "Leaving the city limits (they get teleported back)."
+      ],
+      "emotional_register": "paranoia, Groundhog Day, creeping dread",
+      "exit_when": [
+        "Player encounters a mysterious, familiar voice."
+      ],
+      "exit_keywords": [
+        "player encounters a mysterious, familiar voice."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.11",
+      "title": "The First Sage of Buer",
+      "required_npcs": [
+        "Nahida"
+      ],
+      "location": "Sumeru City (Dream)",
+      "must_happen": [
+        "Player meets Nahida in a quiet corner.",
+        "Nahida confirms they are trapped in a dream loop created by the Akasha system harvesting everyone's brainpower.",
+        "Nahida anoints the player as her 'First Sage' to help wake everyone up."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"The people of Sumeru do not dream. The Akademiya steals their dreams to power a massive calculation.\""
+      ],
+      "player_freedom": [
+        "Asking Nahida how the Akasha works."
+      ],
+      "forbidden": [
+        "Waking up instantly.",
+        "Nahida fixing it herself (she lacks power here)."
+      ],
+      "emotional_register": "revelation, intellectual puzzle",
+      "exit_when": [
+        "Player sets out to find the 'host' of the dream."
+      ],
+      "exit_keywords": [
+        "player sets out to find the 'host' of the dream."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.12",
+      "title": "The Host and the Puppet",
+      "required_npcs": [
+        "Dunyarzad",
+        "Nahida"
+      ],
+      "location": "Sumeru City (Dream)",
+      "must_happen": [
+        "Player discovers Dunyarzad is the host of the dream because she is the one who wanted the festival most.",
+        "They realize Dunyarzad's real body is dying of Eleazar, and her consciousness is fading from the dream.",
+        "Instead of saving her, Nahida helps her accept her final moments by acting as a puppet in her place."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"I'm sorry I'm such a weak Archon... I couldn't even give you a proper birthday.\""
+      ],
+      "player_freedom": [
+        "Emotional responses to Dunyarzad's fading."
+      ],
+      "forbidden": [
+        "Healing Dunyarzad in the dream.",
+        "Stopping the fading."
+      ],
+      "emotional_register": "heartbreaking, inevitable",
+      "exit_when": [
+        "Dunyarzad vanishes from the dream."
+      ],
+      "exit_keywords": [
+        "dunyarzad vanishes from the dream."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.13",
+      "title": "The Dance of Sabzeruz",
+      "required_npcs": [
+        "Nilou"
+      ],
+      "location": "Grand Bazaar",
+      "must_happen": [
+        "To break the dream, Nilou must perform the Dance of Sabzeruz.",
+        "The Akademiya guards try to stop her, but the player realizes the guards are just dream constructs and cannot actually harm them.",
+        "Nilou dances, shattering the illusory sky of the dream."
+      ],
+      "canon_dialogue_hooks": [
+        "Nilou: \"I will dance... for Lesser Lord Kusanali. For Dunyarzad!\""
+      ],
+      "player_freedom": [
+        "Cheering Nilou on."
+      ],
+      "forbidden": [
+        "The player dances instead.",
+        "The dream fails to break."
+      ],
+      "emotional_register": "triumphant, beautiful, cathartic",
+      "exit_when": [
+        "The player wakes up in the real world."
+      ],
+      "exit_keywords": [
+        "the player wakes up in the real world."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.14",
+      "title": "Awakening",
+      "required_npcs": [
+        "Dunyarzad",
+        "Nahida"
+      ],
+      "location": "Sumeru City (Real World)",
+      "must_happen": [
+        "Player checks on the real Dunyarzad.",
+        "Nahida used the last of her power to sustain Dunyarzad's life temporarily.",
+        "Nahida speaks to the player through an Akasha terminal, trapped physically in the Sanctuary of Surasthana by the Sages."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"I am locked away. I have been for five hundred years.\""
+      ],
+      "player_freedom": [
+        "Swearing vengeance against the Sages."
+      ],
+      "forbidden": [
+        "Breaking Nahida out immediately (forcefield is too strong)."
+      ],
+      "emotional_register": "relief, newfound anger",
+      "exit_when": [
+        "Player resolves to investigate the Akademiya's plot."
+      ],
+      "exit_keywords": [
+        "player resolves to investigate the akademiya's plot."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.15",
+      "title": "Dreams, Emptiness, Deception",
+      "required_npcs": [
+        "Setaria",
+        "Nahida"
+      ],
+      "location": "Sumeru City / Port Ormos",
+      "must_happen": [
+        "Player and Nahida (possessing locals via Akasha) manipulate a scholar named Setaria into turning against the Sages.",
+        "They intercept the Akademiya's shipments to discover they are creating a mechanical god using the Electro Gnosis (stolen by Scaramouche) and divine knowledge."
+      ],
+      "canon_dialogue_hooks": [
+        "Setaria: \"The Sages... what are they doing? This is blasphemy!\""
+      ],
+      "player_freedom": [
+        "The psychological manipulation minigame with Setaria."
+      ],
+      "forbidden": [
+        "Telling Setaria outright instead of tricking her."
+      ],
+      "emotional_register": "espionage, psychological thriller",
+      "exit_when": [
+        "The destination of the divine knowledge is found."
+      ],
+      "exit_keywords": [
+        "the destination of the divine knowledge is found."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.16",
+      "title": "The Doctor's Gambit",
+      "required_npcs": [
+        "Il Dottore",
+        "Nahida"
+      ],
+      "location": "Sumeru City / Tighnari's Camp",
+      "must_happen": [
+        "Dottore ambushes the player.",
+        "He traps Nahida's consciousness inside her physical prison, cutting off her connection to the player.",
+        "He mind-controls the local populace to attack the player.",
+        "Player must violently flee Sumeru City."
+      ],
+      "canon_dialogue_hooks": [
+        "Dottore: \"You are but a fledgling god. You are not equipped to face a scholar of the Akademiya.\"",
+        "Nahida: \"Run!\""
+      ],
+      "player_freedom": [
+        "Fighting the mind-controlled citizens vs running."
+      ],
+      "forbidden": [
+        "Defeating Dottore.",
+        "Nahida staying connected."
+      ],
+      "emotional_register": "horror, powerlessness, flight",
+      "exit_when": [
+        "Player arrives in the Desert, exhausted."
+      ],
+      "exit_keywords": [
+        "player arrives in the desert, exhausted."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.17",
+      "title": "Exile to the Desert",
+      "required_npcs": [
+        "Alhaitham",
+        "Cyno",
+        "Dehya"
+      ],
+      "location": "Aaru Village",
+      "must_happen": [
+        "Player stumbles into Aaru Village.",
+        "They find Alhaitham and Cyno (the General Mahamatra who went rogue to investigate the Sages) at each other's throats.",
+        "Dehya brokers a tense peace between them. An alliance of exiles is formed."
+      ],
+      "canon_dialogue_hooks": [
+        "Cyno: \"I will judge the Sages in the name of the Mahamatra.\""
+      ],
+      "player_freedom": [
+        "Siding with Alhaitham's logic vs Cyno's justice."
+      ],
+      "forbidden": [
+        "Cyno and Alhaitham kill each other."
+      ],
+      "emotional_register": "tense alliance, survival",
+      "exit_when": [
+        "The team agrees to investigate King Deshret's ruins for answers."
+      ],
+      "exit_keywords": [
+        "the team agrees to investigate king deshret's ruins for answers."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.18",
+      "title": "Secrets of the Al-Ahmar",
+      "required_npcs": [
+        "Alhaitham",
+        "Cyno"
+      ],
+      "location": "King Deshret's Mausoleum",
+      "must_happen": [
+        "The group delves into a massive underground pyramid.",
+        "They find lost Eleazar patients/scholars driven mad by divine knowledge.",
+        "They discover the truth: The desert peoples hate the Dendro Archon for 'killing' their god (Deshret), but the truth is Deshret sacrificed himself to stop Forbidden Knowledge, and the Dendro Archon helped him save his people."
+      ],
+      "canon_dialogue_hooks": [
+        "Priest's Record: \"The Lord of Grass and Wood... she saved us...\""
+      ],
+      "player_freedom": [
+        "Exploration of the deep tombs.",
+        "Reacting to the historical twist."
+      ],
+      "forbidden": [
+        "Ignoring the lore.",
+        "Destroying the pyramid."
+      ],
+      "emotional_register": "Indiana Jones, revelation, historical tragedy",
+      "exit_when": [
+        "The truth unites the desert dwellers and the rainforest exiles."
+      ],
+      "exit_keywords": [
+        "the truth unites the desert dwellers and the rainforest exiles."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.19",
+      "title": "Planning the Heist",
+      "required_npcs": [
+        "Alhaitham",
+        "Cyno",
+        "Dehya",
+        "Rahman"
+      ],
+      "location": "Aaru Village",
+      "must_happen": [
+        "Alhaitham outlines an insane, multi-step plan to overthrow the Grand Sage and bypass the Akasha's predictive algorithms.",
+        "The plan involves getting captured on purpose."
+      ],
+      "canon_dialogue_hooks": [
+        "Alhaitham: \"The Sages' arrogance is their weakness. They rely completely on the Akasha.\""
+      ],
+      "player_freedom": [
+        "Questioning the massive risks of the plan."
+      ],
+      "forbidden": [
+        "Coming up with a completely different plan."
+      ],
+      "emotional_register": "Oceans 11, tactical planning",
+      "exit_when": [
+        "The team marches on Sumeru City."
+      ],
+      "exit_keywords": [
+        "the team marches on sumeru city."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.20",
+      "title": "Jester's Gambit",
+      "required_npcs": [
+        "Alhaitham",
+        "Azar (Grand Sage)"
+      ],
+      "location": "Akademiya Headquarters",
+      "must_happen": [
+        "Alhaitham is 'captured' and brought to Azar.",
+        "Azar gloats.",
+        "Alhaitham seemingly goes insane from divine knowledge and lunges at Azar.",
+        "It's a distraction: Alhaitham secretly swaps the Akasha's administrative access module during the scuffle.",
+        "Alhaitham is exiled to the desert, winking to the camera."
+      ],
+      "canon_dialogue_hooks": [
+        "Alhaitham: *Maniacal laughter, slamming the desk*",
+        "Azar: \"Take this lunatic to the desert!\""
+      ],
+      "player_freedom": [
+        "Watching the absolute cinema of Alhaitham's acting."
+      ],
+      "forbidden": [
+        "Alhaitham actually going insane.",
+        "Azar winning."
+      ],
+      "emotional_register": "suspense, brilliant deception, triumph",
+      "exit_when": [
+        "The Akasha terminal glows green: player has admin access."
+      ],
+      "exit_keywords": [
+        "the akasha terminal glows green: player has admin access."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.21",
+      "title": "The Art of Distraction",
+      "required_npcs": [
+        "Nilou",
+        "Dehya",
+        "Isak"
+      ],
+      "location": "Sumeru City",
+      "must_happen": [
+        "To draw the guards away from the Sanctuary, Nilou dances in front of the Akademiya to outrage the scholars.",
+        "A child (Isak) disguises himself as Nahida and runs through the Grand Bazaar, leading the guards on a wild goose chase."
+      ],
+      "canon_dialogue_hooks": [
+        "Nilou: \"Watch me... watch my dance!\""
+      ],
+      "player_freedom": [
+        "Helping guide the child's escape route."
+      ],
+      "forbidden": [
+        "The distraction failing."
+      ],
+      "emotional_register": "comedy, heist climax",
+      "exit_when": [
+        "The guards are entirely away from the Sanctuary."
+      ],
+      "exit_keywords": [
+        "the guards are entirely away from the sanctuary."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.22",
+      "title": "A God Freed",
+      "required_npcs": [
+        "Nahida",
+        "Paimon"
+      ],
+      "location": "Sanctuary of Surasthana",
+      "must_happen": [
+        "Player uses the hacked Akasha access to disable the forcefield.",
+        "Player awakens Nahida's physical body.",
+        "Nahida cries thanking the player for not abandoning her.",
+        "She prepares to punish the Sages and stop the birth of the false god."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"You... you really came. I'm not dreaming...\""
+      ],
+      "player_freedom": [
+        "Hugging/comforting Nahida."
+      ],
+      "forbidden": [
+        "Leaving Nahida in the cage."
+      ],
+      "emotional_register": "heartwarming, righteous retribution",
+      "exit_when": [
+        "Nahida takes the lead toward the Joururi Workshop."
+      ],
+      "exit_keywords": [
+        "nahida takes the lead toward the joururi workshop."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.23",
+      "title": "The False God",
+      "required_npcs": [
+        "Scaramouche (Shouki no Kami)",
+        "Nahida"
+      ],
+      "location": "Joururi Workshop",
+      "must_happen": [
+        "Player and Nahida confront Scaramouche, now a massive Evangelion-esque mechanical god.",
+        "Player fights Scaramouche. Phase 1: fighting his upper half.",
+        "Phase 2: Full mech form.",
+        "The player is defeated and killed by an un-dodgeable massive blast."
+      ],
+      "canon_dialogue_hooks": [
+        "Scaramouche: \"I am the all-knowing god! Bow before me!\""
+      ],
+      "player_freedom": [
+        "Combat strategy before the forced loss."
+      ],
+      "forbidden": [
+        "Player wins the first loop.",
+        "Scaramouche dies here."
+      ],
+      "emotional_register": "epic scale, overwhelming defeat",
+      "exit_when": [
+        "The screen goes white."
+      ],
+      "exit_keywords": [
+        "the screen goes white."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.24",
+      "title": "168 Loops",
+      "required_npcs": [
+        "Nahida",
+        "Scaramouche"
+      ],
+      "location": "Joururi Workshop (Dream)",
+      "must_happen": [
+        "The screen rewinds. Nahida reveals she trapped Scaramouche in a Sabzeruz-style dream loop the moment she entered the room.",
+        "They have run this exact battle 168 times to gather combat data.",
+        "Nahida links the player's mind to the entire population of Sumeru via the Akasha, feeding them tactical data."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"Let the minds of Sumeru guide your blade!\""
+      ],
+      "player_freedom": [
+        "Feeling the empowerment of a nation's wisdom in combat."
+      ],
+      "forbidden": [
+        "Scaramouche breaking the loop."
+      ],
+      "emotional_register": "anime turnaround, ultimate triumph",
+      "exit_when": [
+        "Player shatters the mech and defeats Scaramouche."
+      ],
+      "exit_keywords": [
+        "player shatters the mech and defeats scaramouche."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.25",
+      "title": "Taking the Gnosis",
+      "required_npcs": [
+        "Nahida",
+        "Scaramouche"
+      ],
+      "location": "Joururi Workshop",
+      "must_happen": [
+        "Scaramouche falls.",
+        "Nahida reaches into his chest and brutally extracts the Electro Gnosis.",
+        "Scaramouche screams, begging her not to take it, and falls unconscious.",
+        "Nahida uses the two Gnoses to access Irminsul's core."
+      ],
+      "canon_dialogue_hooks": [
+        "Scaramouche: \"No! It's mine! Don't take it!\""
+      ],
+      "player_freedom": [
+        "Watching the tragic fall of the puppet."
+      ],
+      "forbidden": [
+        "Killing Scaramouche.",
+        "Letting Scaramouche keep it."
+      ],
+      "emotional_register": "pathetic, ruthless, decisive",
+      "exit_when": [
+        "Nahida and player enter Irminsul."
+      ],
+      "exit_keywords": [
+        "nahida and player enter irminsul."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.26",
+      "title": "Where the Boat of Consciousness Lies",
+      "required_npcs": [
+        "Greater Lord Rukkhadevata",
+        "Nahida"
+      ],
+      "location": "Irminsul (Core)",
+      "must_happen": [
+        "They meet the remnant of the previous Dendro Archon, Rukkhadevata who looks exactly like an adult Nahida.",
+        "Rukkhadevata explains she was corrupted by Forbidden Knowledge during the cataclysm 500 years ago.",
+        "Because she is connected to Irminsul, the only way to cure the world's Withering is to completely erase her existence from history.",
+        "Nahida cries, but Rukkhadevata comforts her."
+      ],
+      "canon_dialogue_hooks": [
+        "Rukkhadevata: \"World... forget me.\"",
+        "Nahida: \"I'm the Dendro Archon now! I have to do this!\""
+      ],
+      "player_freedom": [
+        "Reactions to the ultimate sacrifice of memory."
+      ],
+      "forbidden": [
+        "Nahida refuses to do it.",
+        "Rukkhadevata survives."
+      ],
+      "emotional_register": "heartbreaking, cosmic horror of forgetting",
+      "exit_when": [
+        "Nahida presses the button. Rukkhadevata is gone."
+      ],
+      "exit_keywords": [
+        "nahida presses the button. rukkhadevata is gone."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.27",
+      "title": "The Blank Slate",
+      "required_npcs": [
+        "Paimon",
+        "Nahida"
+      ],
+      "location": "Sanctuary of Surasthana",
+      "must_happen": [
+        "They return to reality. Paimon and Nahida have no idea who Rukkhadevata is.",
+        "All texts, memories, and records in Teyvat now say Nahida was always the Dendro Archon, just diminished in power.",
+        "Only the player (as a Descender) remembers Rukkhadevata."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"Who are you talking about? Nahida has always been the Dendro Archon!\""
+      ],
+      "player_freedom": [
+        "Trying to explain to Paimon, or keeping quiet."
+      ],
+      "forbidden": [
+        "Paimon remembers.",
+        "Irminsul un-wipes the memory."
+      ],
+      "emotional_register": "existential dread, isolation",
+      "exit_when": [
+        "Nahida sends the player away to rest."
+      ],
+      "exit_keywords": [
+        "nahida sends the player away to rest."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.28",
+      "title": "The Doctor's Deal",
+      "required_npcs": [
+        "Il Dottore",
+        "Nahida"
+      ],
+      "location": "Sanctuary of Surasthana",
+      "must_happen": [
+        "Dottore appears to Nahida after the player leaves.",
+        "He puts the entire city to sleep and demands the two Gnoses.",
+        "Nahida threatens to destroy one, which would awaken the Heavenly Principles and bring destruction.",
+        "Dottore is impressed. He trades the erasure of all his other clones/segments for the Electro Gnosis.",
+        "He trades a massive hidden truth ('The sky is fake') for the Dendro Gnosis."
+      ],
+      "canon_dialogue_hooks": [
+        "Dottore: \"The firmament of Teyvat is a lie.\""
+      ],
+      "player_freedom": [
+        "Player is absent for this, they hear about it later."
+      ],
+      "forbidden": [
+        "Nahida fights him.",
+        "Dottore kills Nahida."
+      ],
+      "emotional_register": "high-level chess game, ominous",
+      "exit_when": [
+        "Dottore leaves with the Gnoses."
+      ],
+      "exit_keywords": [
+        "dottore leaves with the gnoses."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "sumeru.29",
+      "title": "The Descender",
+      "required_npcs": [
+        "Nahida"
+      ],
+      "location": "Sanctuary of Surasthana",
+      "must_happen": [
+        "Player returns to Nahida for answers.",
+        "Nahida reveals the player is the 'Fourth Descender' (an entity from outside Teyvat not bound by Irminsul).",
+        "Nahida reveals their sibling IS bound by Irminsul, meaning the world considers the sibling to belong to Teyvat. She mentions Khaenri'ah.",
+        "Nahida directs the player to Fontaine, the Nation of Justice."
+      ],
+      "canon_dialogue_hooks": [
+        "Nahida: \"You are the Fourth Descender. But your twin... Irminsul has records of them. Why?\""
+      ],
+      "player_freedom": [
+        "Asking all possible lore questions."
+      ],
+      "forbidden": [
+        "Nahida refusing to answer.",
+        "Nahida going with the player."
+      ],
+      "emotional_register": "mind-blowing lore, resetting the stakes",
+      "exit_when": [
+        "Player prepares to journey to Fontaine."
+      ],
+      "exit_keywords": [
+        "player prepares to journey to fontaine."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "The loop in the Sabzeruz festival can be roleplayed extensively. The massive lore drop at the end fundamentally changes the player's understanding of Teyvat."
+}

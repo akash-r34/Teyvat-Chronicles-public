@@ -1,0 +1,41 @@
+{
+  "mond.06": [
+    { "noun": "kaeya", "canonical": "Kaeya", "category": "character", "aliases": ["cavalry captain"] }
+  ],
+  "mond.07": [
+    { "noun": "jean", "canonical": "Jean", "category": "character", "aliases": ["acting grand master", "dandelion knight"] },
+    { "noun": "lisa", "canonical": "Lisa", "category": "character", "aliases": ["librarian"] }
+  ],
+  "mond.13": [
+    { "noun": "venti", "canonical": "Venti", "category": "character", "aliases": ["the green bard"] },
+    { "noun": "dvalin", "canonical": "Dvalin", "category": "character", "aliases": ["stormterror"] }
+  ],
+  "mond.15": [
+    { "noun": "diluc", "canonical": "Diluc", "category": "character", "aliases": ["master diluc", "darknight hero"] }
+  ],
+  "mond.24": [
+    { "noun": "barbatos", "canonical": "Barbatos", "category": "character", "aliases": ["anemo archon", "wind god", "lord barbatos"] }
+  ],
+  "mond.26": [
+    { "noun": "signora", "canonical": "Signora", "category": "character", "aliases": ["la signora", "the fair lady", "8th of the fatui harbingers", "rosalyne"] }
+  ],
+  "mond.29": [
+    { "noun": "klee", "canonical": "Klee", "category": "character", "aliases": ["spark knight"] }
+  ],
+  "liyue.24": [
+    { "noun": "zhongli", "canonical": "Zhongli", "category": "character", "aliases": [] },
+    { "noun": "morax", "canonical": "Morax", "category": "character", "aliases": ["rex lapis", "geo archon", "prime adeptus"] }
+  ],
+  "inazuma.18": [
+    { "noun": "raiden shogun", "canonical": "Raiden Shogun", "category": "character", "aliases": ["ei", "makoto", "baal", "beelzebul", "electro archon"] }
+  ],
+  "sumeru.15": [
+    { "noun": "nahida", "canonical": "Nahida", "category": "character", "aliases": ["buer", "lesser lord kusanali", "dendro archon"] }
+  ],
+  "fontaine.20": [
+    { "noun": "furina", "canonical": "Furina", "category": "character", "aliases": ["focalors", "hydro archon"] }
+  ],
+  "natlan.15": [
+    { "noun": "mavuika", "canonical": "Mavuika", "category": "character", "aliases": ["pyro archon"] }
+  ]
+}

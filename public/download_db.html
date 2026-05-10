@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Download DB Backup</title></head>
+<body style="font-family: sans-serif; padding: 2rem;">
+  <h2>DB Backup Downloader</h2>
+  <button id="dlBtn" style="padding: 1rem 2rem; font-size: 1.2rem; cursor: pointer;">Start Download</button>
+  <p id="status"></p>
+
+  <script>
+    const btn = document.getElementById('dlBtn');
+    const status = document.getElementById('status');
+
+    btn.onclick = () => {
+      status.innerText = 'Preparing live backup…';
+      window.location.href = '/api/db/download';
+      setTimeout(() => {
+        status.innerText = 'Download started — check your downloads folder.';
+      }, 1000);
+    };
+  </script>
+</body>
+</html>

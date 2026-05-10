@@ -1,0 +1,94 @@
+{
+  "region": "Snezhnaya",
+  "archon_quest_chapter": "VI",
+  "archon_quest_acts": [
+    "I"
+  ],
+  "version": "6.0",
+  "last_reviewed": "2026-04-25",
+  "region_unfinished": true,
+  "summary_for_director": "Snezhnaya is the frozen homeland of the Fatui and the Tsaritsa. As this region is currently unreleased/unfinished in canon, the director should treat this as the current narrative frontier. Bring the player to the border, establish the extreme cold, and let them free-roam or prepare for the final war.",
+  "emotional_register_default": "frozen, hostile, climactic preparation",
+  "named_npcs_introduced": [
+    "Childe (Return)",
+    "Pierro",
+    "Columbina",
+    "Tsaritsa"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [],
+    "hint_only": []
+  },
+  "beats": [
+    {
+      "id": "snezhnaya.01",
+      "title": "The Frozen Frontier",
+      "anchor_quest": "Into the Blizzard",
+      "required_npcs": [
+        "Childe"
+      ],
+      "location": "Snezhnayan Border",
+      "must_happen": [
+        "The player crosses the border into Snezhnaya.",
+        "They face a brutal, unnatural blizzard.",
+        "Childe greets them at the border, welcoming them to his homeland but warning them that the Tsaritsa's patience is wearing thin."
+      ],
+      "canon_dialogue_hooks": [
+        "Childe: 'Welcome to Snezhnaya, comrade! I told you I'd introduce you to my family... assuming we survive the cold.'"
+      ],
+      "player_freedom": [
+        "How they treat Childe now that they are in his territory."
+      ],
+      "forbidden": [
+        "The player cannot meet the Tsaritsa immediately.",
+        "The player cannot conquer Snezhnaya."
+      ],
+      "emotional_register": "cold, hostile, tense reunion",
+      "exit_when": [
+        "The player enters the first Snezhnayan settlement."
+      ],
+      "unlocks_named": [],
+      "unlocks_hint": [],
+      "sets_flags_optional": [],
+      "estimated_turns": "3",
+      "exit_keywords": [
+        "the player enters the first snezhnayan settlement."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "snezhnaya.02",
+      "title": "Awaiting the Tsaritsa",
+      "anchor_quest": "Endgame Threshold",
+      "required_npcs": [],
+      "location": "Snezhnaya Outskirts",
+      "must_happen": [
+        "The player establishes a base camp or safehouse.",
+        "They learn that all the Gnoses have been gathered at the Zapolyarny Palace.",
+        "The director informs the player that the path forward requires extensive preparation—they must explore, level up, or side-quest before the final march."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: 'It's so cold, Paimon's brain is freezing... We need to get ready before we even think about fighting a Harbinger on their home turf.'"
+      ],
+      "player_freedom": [
+        "Total freedom. The narrative shifts into an open-ended survival/preparation phase."
+      ],
+      "forbidden": [
+        "The director must NOT invent an ending to the Genshin storyline. Do not defeat the Tsaritsa. Do not fight the Heavenly Principles."
+      ],
+      "emotional_register": "calm before the storm",
+      "exit_when": [
+        "Never. This is the current edge of canon."
+      ],
+      "unlocks_named": [],
+      "unlocks_hint": [],
+      "sets_flags_optional": [],
+      "estimated_turns": "100",
+      "exit_keywords": [
+        "never. this is the current edge of canon."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "Do not railroad players past beat 2. Snezhnaya is unfinished, so let the player treat this as endless endgame survival/adventure mode."
+}

@@ -1,0 +1,839 @@
+{
+  "region": "Natlan",
+  "archon_quest_chapter": "V",
+  "archon_quest_acts": [
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI"
+  ],
+  "version": "5.3",
+  "last_reviewed": "2026-04-25",
+  "summary_for_director": "Natlan is the nation of war, locked in an eternal struggle against the Abyss. The story focuses on the cycle of resurrection, the Night Kingdom, and forging alliances to save the nation from total annihilation.",
+  "emotional_register_default": "fiery, heroic, desperate",
+  "named_npcs_introduced": [
+    "Mavuika",
+    "Kachina",
+    "Kinich",
+    "Mualani",
+    "Xilonen",
+    "Chasca",
+    "Citlali",
+    "Capitano"
+  ],
+  "lore_unlocks_region_grants": {
+    "named": [
+      "night_kingdom_truth",
+      "tsaritsa_plan"
+    ],
+    "hint_only": []
+  },
+  "beats": [
+    {
+      "id": "natlan.01",
+      "title": "Welcome to the Nation of War",
+      "required_npcs": [
+        "Kachina",
+        "Paimon"
+      ],
+      "location": "Natlan Border",
+      "must_happen": [
+        "Player enters the canyon borders of Natlan.",
+        "They meet a tepetlisaurus cub and Kachina (Children of Echoes tribe).",
+        "Kachina's vision is stolen by thieves, and the player helps her recover it."
+      ],
+      "canon_dialogue_hooks": [
+        "Kachina: \"I-I'm not crying! I'm a warrior of Natlan!\""
+      ],
+      "player_freedom": [
+        "Petting the saurian.",
+        "Reassuring Kachina."
+      ],
+      "forbidden": [
+        "Attacking the saurian."
+      ],
+      "emotional_register": "dusty, adventurous, encouraging",
+      "exit_when": [
+        "Kachina's vision is returned and they head to the stadium."
+      ],
+      "exit_keywords": [
+        "kachina's vision is returned and they head to the stadium."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.02",
+      "title": "The Pilgrimage of the Return",
+      "required_npcs": [
+        "Mavuika",
+        "Mualani",
+        "Kinich"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "Player arrives at the massive stadium/city.",
+        "They witness the tournament where tribes fight for glory and to feed the Sacred Flame.",
+        "They meet the current Pyro Archon, Mavuika, who acts extremely casual and biker-like.",
+        "Kachina participates in the Pilgrimage tournament."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"Welcome to Natlan! Hope you're ready to see some fireworks!\""
+      ],
+      "player_freedom": [
+        "Attitude toward the casual Archon.",
+        "Cheering for Kachina."
+      ],
+      "forbidden": [
+        "Attacking Mavuika.",
+        "Entering the tournament instead of Kachina."
+      ],
+      "emotional_register": "hype, sports-anime",
+      "exit_when": [
+        "Kachina's team wins her bracket."
+      ],
+      "exit_keywords": [
+        "kachina's team wins her bracket."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.03",
+      "title": "Into the Night Kingdom",
+      "required_npcs": [
+        "Kachina"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "The 'victors' are sent into the Night Kingdom (the abyss frontlines) to fight back the darkness.",
+        "If they die there, the Ode of Resurrection is supposed to bring them back because they won.",
+        "Kachina's squad goes in, but they don't return. The resurrection ceremony fails for her."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"Something's wrong. The flame... it couldn't reach her.\""
+      ],
+      "player_freedom": [
+        "Panic regarding Kachina's fate."
+      ],
+      "forbidden": [
+        "Accepting her death immediately."
+      ],
+      "emotional_register": "shock, tragedy, betrayal of expectations",
+      "exit_when": [
+        "Mavuika summons the player for a private meeting."
+      ],
+      "exit_keywords": [
+        "mavuika summons the player for a private meeting."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.04",
+      "title": "A Failing Flame",
+      "required_npcs": [
+        "Mavuika"
+      ],
+      "location": "Archon's Chamber",
+      "must_happen": [
+        "Mavuika confesses that the Ode of Resurrection is failing because the Abyss is eroding the leylines.",
+        "In one year's time, Natlan will be completely destroyed by the Abyss.",
+        "Player offers to physically enter the Night Kingdom (since they don't belong to the leylines) to pull Kachina's soul out."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"I've been calculating the days... we have exactly one year before the end of everything.\""
+      ],
+      "player_freedom": [
+        "Questions about the leylines.",
+        "Determination to save Kachina."
+      ],
+      "forbidden": [
+        "Refusing to save her.",
+        "Mavuika giving up."
+      ],
+      "emotional_register": "ticking time bomb, serious",
+      "exit_when": [
+        "Mualani and Kinich agree to guide the player to a physical entrance."
+      ],
+      "exit_keywords": [
+        "mualani and kinich agree to guide the player to a physical entrance."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.05",
+      "title": "The People of the Springs",
+      "required_npcs": [
+        "Mualani",
+        "Atea"
+      ],
+      "location": "People of the Springs Tribe",
+      "must_happen": [
+        "Player travels to Mualani's tribe to find a way in.",
+        "They help around the hot springs and learn about the local culture.",
+        "They learn that Abyssal corruption (phlogiston erosion) is already affecting civilians like Atea."
+      ],
+      "canon_dialogue_hooks": [
+        "Mualani: \"We ride the waves, but the Abyss is like a whirlpool pulling us under.\""
+      ],
+      "player_freedom": [
+        "Relaxing in the springs briefly before the heavy plot."
+      ],
+      "forbidden": [
+        "Skipping the tribal diplomacy.",
+        "Curing Atea instantly."
+      ],
+      "emotional_register": "cheerful facade hiding despair",
+      "exit_when": [
+        "A portal to the Night Kingdom is located in the deep waters."
+      ],
+      "exit_keywords": [
+        "a portal to the night kingdom is located in the deep waters."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.06",
+      "title": "Descent into Darkness",
+      "required_npcs": [
+        "Mualani",
+        "Kinich"
+      ],
+      "location": "The Night Kingdom",
+      "must_happen": [
+        "Player, Mualani, and Kinich enter the shadowy, surreal dimension of the Night Kingdom.",
+        "They navigate massive abyssal constructs. Kinich's pixel-dragon companion 'Ajaw' acts as a cynical guide.",
+        "They find Kachina's fragmented soul defending herself against Abyss hounds."
+      ],
+      "canon_dialogue_hooks": [
+        "Ajaw: \"Oh look, the crybaby is still fighting. I lost a bet.\""
+      ],
+      "player_freedom": [
+        "Combat strategy.",
+        "Telling Ajaw to shut up."
+      ],
+      "forbidden": [
+        "Kachina dying permanently."
+      ],
+      "emotional_register": "surreal, desperate combat",
+      "exit_when": [
+        "Kachina is rescued and they flee the realm."
+      ],
+      "exit_keywords": [
+        "kachina is rescued and they flee the realm."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.07",
+      "title": "The First Return",
+      "required_npcs": [
+        "Kachina",
+        "Mavuika"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "The group bursts out of the Night Kingdom portal.",
+        "Kachina is successfully resurrected on the main stage to massive applause.",
+        "Mavuika publicly names the player's group as the vanguard that will save Natlan."
+      ],
+      "canon_dialogue_hooks": [
+        "Kachina: \"I... I didn't die!\"",
+        "Crowd: *Massive roaring applause*"
+      ],
+      "player_freedom": [
+        "Basking in the glory.",
+        "Hugging Kachina."
+      ],
+      "forbidden": [
+        "Rejecting the applause out of spite."
+      ],
+      "emotional_register": "triumph, overwhelming joy",
+      "exit_when": [
+        "The party moves to a war council."
+      ],
+      "exit_keywords": [
+        "the party moves to a war council."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.08",
+      "title": "The Name Forger",
+      "required_npcs": [
+        "Xilonen"
+      ],
+      "location": "Children of Echoes",
+      "must_happen": [
+        "Mavuika determines the player needs an 'Ancient Name' (a leyline anchor) to fight properly in Natlan.",
+        "They visit Xilonen, the master smith who forges spiritual names into artifacts.",
+        "Xilonen sends them to gather unique ores while she preps the ritual."
+      ],
+      "canon_dialogue_hooks": [
+        "Xilonen: \"You want me to forge an Ancient Name for an outlander? You're crazy, Mavuika. I love it.\""
+      ],
+      "player_freedom": [
+        "Dialogue with the extremely laid-back Xilonen."
+      ],
+      "forbidden": [
+        "Refusing the ancient name."
+      ],
+      "emotional_register": "cool, mystical crafting",
+      "exit_when": [
+        "The ores are gathered."
+      ],
+      "exit_keywords": [
+        "the ores are gathered."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.09",
+      "title": "The Captain Speaks",
+      "required_npcs": [
+        "Capitano",
+        "Mavuika"
+      ],
+      "location": "Stadium of the Sacred Flame (Exterior)",
+      "must_happen": [
+        "The sky turns dark. Il Capitano (The 1st Fatui Harbinger) arrives.",
+        "He demands Mavuika hand over the Pyro Gnosis, claiming her plan to save Natlan is flawed and he must take over to enforce a new order.",
+        "Mavuika refuses."
+      ],
+      "canon_dialogue_hooks": [
+        "Capitano: \"Your flames are dying, Archon. Yield, and I will save this nation.\"",
+        "Mavuika: \"Come and take it, if you think you're strong enough.\""
+      ],
+      "player_freedom": [
+        "Awe at Capitano's presence.",
+        "Standing ground."
+      ],
+      "forbidden": [
+        "Player fights Capitano.",
+        "Mavuika hands it over peaceably."
+      ],
+      "emotional_register": "extreme tension, titanic power",
+      "exit_when": [
+        "Mavuika summons her giant greatsword."
+      ],
+      "exit_keywords": [
+        "mavuika summons her giant greatsword."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.10",
+      "title": "Clash of Titans (Mavuika vs Capitano)",
+      "required_npcs": [
+        "Mavuika",
+        "Capitano",
+        "Ororon"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "A massive anime-style cinematic duel occurs between Mavuika and Capitano.",
+        "Punches shatter the sound barrier and crack the sky.",
+        "Mavuika manages to land a devastating blow on Capitano's chest, cracking his mask.",
+        "A mysterious Bat-man (Ororon) uses smoke and shadows to teleport the injured Capitano away before Mavuika can finish him."
+      ],
+      "canon_dialogue_hooks": [
+        "Capitano: *Grunts in pain, mask cracking*",
+        "Mavuika: \"Is that all the first Harbinger's got?!\""
+      ],
+      "player_freedom": [
+        "Watching the cinematic (no gameplay)."
+      ],
+      "forbidden": [
+        "Capitano dies.",
+        "Mavuika loses."
+      ],
+      "emotional_register": "unbelievable hype, dbz-level action",
+      "exit_when": [
+        "Capitano escapes."
+      ],
+      "exit_keywords": [
+        "capitano escapes."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.11",
+      "title": "A Nation in Ruins",
+      "required_npcs": [
+        "Mavuika",
+        "Citizens"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "Immediately after the duel, the Abyss launches a massive surprise attack on the stadium.",
+        "Abyss rifts open everywhere and thousands of monsters pour out.",
+        "The player fights desperately, but the numbers are endless."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: \"There's too many of them, we can't hold them back!\""
+      ],
+      "player_freedom": [
+        "Combat wave survival."
+      ],
+      "forbidden": [
+        "Player solos all of them instantly.",
+        "The monsters retreat easily."
+      ],
+      "emotional_register": "exhaustion, sheer numbers, panic",
+      "exit_when": [
+        "Mavuika steps to the center of the stadium."
+      ],
+      "exit_keywords": [
+        "mavuika steps to the center of the stadium."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.12",
+      "title": "The Archon's Sacrifice",
+      "required_npcs": [
+        "Mavuika"
+      ],
+      "location": "Sacred Flame Altar",
+      "must_happen": [
+        "To save her people, Mavuika sacrifices her entire divine power, feeding it into the Sacred Flame.",
+        "A massive shockwave of fire purges every Abyss monster in the city and erects a massive barrier.",
+        "Mavuika's hair stops glowing. She collapses, now essentially a normal human in terms of power (temporarily)."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"I will burn everything I am to protect my people!\""
+      ],
+      "player_freedom": [
+        "Rushing to catch her as she falls."
+      ],
+      "forbidden": [
+        "Mavuika dying permanently.",
+        "The barrier failing."
+      ],
+      "emotional_register": "noble sacrifice, desperation",
+      "exit_when": [
+        "The city is saved but highly vulnerable."
+      ],
+      "exit_keywords": [
+        "the city is saved but highly vulnerable."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.13",
+      "title": "The Six Heroes",
+      "required_npcs": [
+        "Mavuika",
+        "Xilonen"
+      ],
+      "location": "Archon's Chamber",
+      "must_happen": [
+        "Mavuika wakes up powerless but determined.",
+        "She explains the only way to permanently stop the Abyss and restore her power is to awaken the 'Ancient Names' of the six great heroes of Natlan's past.",
+        "Player, Kachina, Mualani, and Kinich are three. They must find the other three to complete the ritual."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"I may have lost my spark, but my fists still work. We need the six heroes.\""
+      ],
+      "player_freedom": [
+        "Agreeing to the huge fetch quest with determination."
+      ],
+      "forbidden": [
+        "Refusing to help find them."
+      ],
+      "emotional_register": "rallying, quest-setting",
+      "exit_when": [
+        "The party splits up to find them."
+      ],
+      "exit_keywords": [
+        "the party splits up to find them."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.14",
+      "title": "Masters of the Night-Wind",
+      "required_npcs": [
+        "Citlali",
+        "Ororon"
+      ],
+      "location": "Night-Wind Tribunal",
+      "must_happen": [
+        "Player travels to the Night-Wind tribe.",
+        "They meet Citlali, a grumpy senior diviner, and confront Ororon (the traitor who saved Capitano).",
+        "Ororon explains he is working with Capitano because he believes Capitano's method is the only way to save Natlan without sacrificing Mavuika.",
+        "Citlali scolds him but protects him from the player's wrath."
+      ],
+      "canon_dialogue_hooks": [
+        "Ororon: \"The Archon's plan requires her death. I cannot allow that.\"",
+        "Citlali: \"You idiot boy, you don't make deals with the Fatui!\""
+      ],
+      "player_freedom": [
+        "Attacking Ororon (temporarily).",
+        "Listening to his arguments."
+      ],
+      "forbidden": [
+        "Killing Ororon.",
+        "Ororon joining the player immediately."
+      ],
+      "emotional_register": "conflict of ideals, tribal politics",
+      "exit_when": [
+        "Ororon is detained by his tribe and Citlali agrees to help."
+      ],
+      "exit_keywords": [
+        "ororon is detained by his tribe and citlali agrees to help."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.15",
+      "title": "The Flower-Feather Clan",
+      "required_npcs": [
+        "Chasca",
+        "Xilonen"
+      ],
+      "location": "Flower-Feather Village",
+      "must_happen": [
+        "Player seeks out Chasca.",
+        "Chasca is dealing with her sister's severe abyssal corruption and her inner turmoil about being adopted by the tribe.",
+        "Player helps Chasca clear an abyssal nest threatening her sister.",
+        "Chasca awakes her Ancient Name."
+      ],
+      "canon_dialogue_hooks": [
+        "Chasca: \"Blood doesn't make family. The sky we share does.\""
+      ],
+      "player_freedom": [
+        "Combat support (air combat tutorial)."
+      ],
+      "forbidden": [
+        "Her sister dies before the ritual.",
+        "Chasca refuses the name."
+      ],
+      "emotional_register": "family drama, aerial action",
+      "exit_when": [
+        "Chasca officially joins the Six Heroes."
+      ],
+      "exit_keywords": [
+        "chasca officially joins the six heroes."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.16",
+      "title": "Citlali's Vision",
+      "required_npcs": [
+        "Citlali"
+      ],
+      "location": "Night-Wind Observatory",
+      "must_happen": [
+        "Citlali drinks too much soup and goes into a trance.",
+        "She has a vision of the impending full-scale Abyss invasion.",
+        "She discovers Ororon possesses the final Ancient Name.",
+        "Player must confront Ororon in his cell to convince him to join them."
+      ],
+      "canon_dialogue_hooks": [
+        "Citlali: \"Ugh my head... the idiot boy is the final piece of the puzzle.\""
+      ],
+      "player_freedom": [
+        "Waking Citlali up roughly.",
+        "Negotiating with Ororon."
+      ],
+      "forbidden": [
+        "Ororon escapes the cell to return to the Fatui."
+      ],
+      "emotional_register": "comedic turning serious, realization",
+      "exit_when": [
+        "Ororon accepts his destiny as a hero of Natlan."
+      ],
+      "exit_keywords": [
+        "ororon accepts his destiny as a hero of natlan."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.17",
+      "title": "The 500-Year Cycle",
+      "required_npcs": [
+        "Mavuika",
+        "Player"
+      ],
+      "location": "Secret Cave / Murata's Tomb",
+      "must_happen": [
+        "Mavuika takes the player to a secret tomb.",
+        "Lore drop: Mavuika is a human who lived 500 years ago. Her sister sacrificed herself to seal the Abyss temporarily so Mavuika could be resurrected in the present day to fight the final battle.",
+        "Mavuika breaks down crying over the weight of her sister's sacrifice.",
+        "Player comforts the Archon."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"I left my family... my sister... I jumped 500 years into the future just to fail them...\""
+      ],
+      "player_freedom": [
+        "Silent support vs verbal encouragement."
+      ],
+      "forbidden": [
+        "Mocking her.",
+        "Leaving the cave early."
+      ],
+      "emotional_register": "raw vulnerability, deep grief, intimacy",
+      "exit_when": [
+        "Mavuika dries her eyes and regains her resolve."
+      ],
+      "exit_keywords": [
+        "mavuika dries her eyes and regains her resolve."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.18",
+      "title": "The Black Sky",
+      "required_npcs": [
+        "All Six Heroes",
+        "Mavuika"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "The barrier begins to shatter. The sky turns pitch black.",
+        "The true Abyss assault begins. The Six Heroes take their positions at the ritual nodes.",
+        "The player is tasked with defending the central pyre while the ritual charges.",
+        "Waves of elite Abyss enemies crash the arena."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"Hold the line! Just a little longer!\""
+      ],
+      "player_freedom": [
+        "Intense combat.",
+        "Managing cooldowns and dodging massive AoE attacks."
+      ],
+      "forbidden": [
+        "The central pyre is destroyed."
+      ],
+      "emotional_register": "total war, desperate defense",
+      "exit_when": [
+        "The ritual completes but a massive Abyssal Lord emerges."
+      ],
+      "exit_keywords": [
+        "the ritual completes but a massive abyssal lord emerges."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.19",
+      "title": "The Wayob Awakens",
+      "required_npcs": [
+        "Six Heroes",
+        "Abyssal Lord"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "An Abyssal Lord shatters the ritual circle.",
+        "The Six Heroes' Ancient Names resonate with the player.",
+        "The player is infused with the combined power of the six tribes, gaining a massive aura.",
+        "Player duels the Abyssal Lord, slicing through its shields effortlessly."
+      ],
+      "canon_dialogue_hooks": [
+        "All Heroes: \"For the flames! For Natlan!\""
+      ],
+      "player_freedom": [
+        "Enjoying the massive buffs in combat."
+      ],
+      "forbidden": [
+        "Player dies in this phase.",
+        "Abyssal Lord kills a hero."
+      ],
+      "emotional_register": "power fantasy, epic climax",
+      "exit_when": [
+        "The Abyssal Lord is destroyed."
+      ],
+      "exit_keywords": [
+        "the abyssal lord is destroyed."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.20",
+      "title": "Return of the Archon",
+      "required_npcs": [
+        "Mavuika"
+      ],
+      "location": "Sacred Flame Altar",
+      "must_happen": [
+        "With the Abyss pushed back and the leylines cleansed by the Six Heroes, the Sacred Flame erupts into a massive column.",
+        "Mavuika's hair ignites. Her power is fully restored, greater than before.",
+        "She reignites the Ode of Resurrection permanently.",
+        "Natlan is saved."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"The flames of Natlan will never die!\""
+      ],
+      "player_freedom": [
+        "Cheering as her powers return."
+      ],
+      "forbidden": [
+        "She stays powerless.",
+        "The Abyss returns instantly."
+      ],
+      "emotional_register": "glorious triumph, rebirth",
+      "exit_when": [
+        "The victory celebrations begin."
+      ],
+      "exit_keywords": [
+        "the victory celebrations begin."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.23",
+      "title": "The Tribal Council",
+      "required_npcs": [
+        "Mavuika",
+        "Tribal Chiefs"
+      ],
+      "location": "Stadium of the Sacred Flame",
+      "must_happen": [
+        "Player helps mediate a fierce dispute between the tribal chiefs regarding resource distribution before the final battle.",
+        "They succeed by proving the Abyss threat is immediate to all."
+      ],
+      "canon_dialogue_hooks": [
+        "Chief: 'Our tribe's warriors bleed first!'"
+      ],
+      "player_freedom": [
+        "Choosing which chief to appease first."
+      ],
+      "forbidden": [
+        "The tribes go to war with each other."
+      ],
+      "emotional_register": "political, tense",
+      "exit_when": [
+        "The council unifies."
+      ],
+      "exit_keywords": [
+        "the council unifies."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.24",
+      "title": "Saurian Bond",
+      "required_npcs": [
+        "Little Tepetlisaurus",
+        "Paimon"
+      ],
+      "location": "Wilds of Natlan",
+      "must_happen": [
+        "Player spends time training and bonding with their Saurian companion.",
+        "The companion unlocks a new exploration ability critically needed for the final assault."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: 'Aww, he really trusts you now!'"
+      ],
+      "player_freedom": [
+        "Feeding and playing minigame."
+      ],
+      "forbidden": [
+        "Abandoning the Saurian."
+      ],
+      "emotional_register": "cute, pet bonding",
+      "exit_when": [
+        "The ability is unlocked."
+      ],
+      "exit_keywords": [
+        "the ability is unlocked."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.25",
+      "title": "The First Archon's Truth",
+      "required_npcs": [
+        "Mavuika",
+        "Paimon"
+      ],
+      "location": "Xbalanque's Ruin",
+      "must_happen": [
+        "Player discovers an ancient tablet detailing the original Pyro Archon, Xbalanque.",
+        "Lore drop regarding how the dragons of Natlan surrendered their power willingly to form the Ode of Resurrection."
+      ],
+      "canon_dialogue_hooks": [
+        "Paimon: 'So the dragons actually agreed to this?!'"
+      ],
+      "player_freedom": [
+        "Reading optional lore tablets."
+      ],
+      "forbidden": [
+        "Destroying the tablet."
+      ],
+      "emotional_register": "lore-drop, ancient mystery",
+      "exit_when": [
+        "Player reports the findings to Mavuika."
+      ],
+      "exit_keywords": [
+        "player reports the findings to mavuika."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.21",
+      "title": "A Chat with the Captain",
+      "required_npcs": [
+        "Capitano",
+        "Mavuika"
+      ],
+      "location": "Archon's Chamber",
+      "must_happen": [
+        "Capitano requests a formal, peaceful audience with the newly restored Archon.",
+        "He admits her method worked and she is a worthy Archon.",
+        "Mavuika gives him the Pyro Gnosis willingly, revealing she had long planned to do so because Celestia's rules must be broken by the Tsaritsa to truly free Teyvat."
+      ],
+      "canon_dialogue_hooks": [
+        "Capitano: \"I misjudged you, Mavuika. You carry the weight of a nation well.\"",
+        "Mavuika: \"Take the Gnosis. Let the Tsaritsa wage her war against the heavens.\""
+      ],
+      "player_freedom": [
+        "Surprise at the peaceful handover."
+      ],
+      "forbidden": [
+        "Player fights Capitano here.",
+        "Capitano takes it by force."
+      ],
+      "emotional_register": "respectful, world-shifting lore",
+      "exit_when": [
+        "Capitano departs."
+      ],
+      "exit_keywords": [
+        "capitano departs."
+      ],
+      "location_flexible": false
+    },
+    {
+      "id": "natlan.22",
+      "title": "The Road to Snezhnaya",
+      "required_npcs": [
+        "Mavuika"
+      ],
+      "location": "Natlan Gates",
+      "must_happen": [
+        "Mavuika bids the player farewell.",
+        "She warns them that the Tsaritsa has collected all the Gnoses and Snezhnaya will be a land of ice and utter rebellion.",
+        "She gives the player her blessing."
+      ],
+      "canon_dialogue_hooks": [
+        "Mavuika: \"Don't freeze to death out there. And give the Tsaritsa a punch for me if she gets out of line.\""
+      ],
+      "player_freedom": [
+        "Saying a heartfelt goodbye."
+      ],
+      "forbidden": [
+        "Refusing to go to Snezhnaya."
+      ],
+      "emotional_register": "friendly parting, building hype for the finale",
+      "exit_when": [
+        "Player steps onto the path to Snezhnaya."
+      ],
+      "exit_keywords": [
+        "player steps onto the path to snezhnaya."
+      ],
+      "location_flexible": false
+    }
+  ],
+  "branch_notes": "Natlan focuses heavily on the theme of 'passing the torch' and mortals stepping up. The uneasy alliance with the Fatui sets the stage for Snezhnaya."
+}

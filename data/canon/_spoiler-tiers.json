@@ -1,0 +1,23 @@
+{
+  "lore_keys": {
+    "false_sky": "sumeru",
+    "celestia": "liyue",
+    "heavenly_principles": "sumeru",
+    "unknown_god": "prologue",
+    "khaenriah": "mondstadt_end",
+    "cataclysm": "inazuma",
+    "abyss_twin": "mondstadt_end",
+    "abyss_order_truth": "chasm",
+    "archon_war_truth": "liyue",
+    "second_who_came": "enkonomiya",
+    "descenders": "sumeru",
+    "gnoses": "mondstadt_end",
+    "irminsul": "sumeru",
+    "forbidden_knowledge": "sumeru",
+    "final_days": "fontaine",
+    "sustainer_of_heavenly_principles": "prologue",
+    "night_kingdom_truth": "natlan",
+    "seven_sovereigns": "fontaine",
+    "tsaritsa_plan": "natlan"
+  }
+}
