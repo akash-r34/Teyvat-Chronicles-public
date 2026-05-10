@@ -105,7 +105,7 @@ Every turn produces a new Imagen-3 manga panel, Gemini narration, and 3 timed ch
   </tr>
 </table>
 
-**[Download the example manga PDF (Lumina's story, real gameplay export)](https://github.com/akash-r34/Teyvat-Chronicles-public/releases/download/v1.0.0/lumina-manga-export.pdf)** — cover page, table of contents, character roster, every Imagen-3 panel from the session, epilogue stats. Generated straight from the game, no manual editing.
+**[Download the example manga PDF (Lumina's story, real gameplay export)](https://github.com/akash-r34/Teyvat-Chronicles-public/releases/download/v1.0.0/Save_.Lumina.pdf)** — cover page, table of contents, character roster, every Imagen-3 panel from the session, epilogue stats. Generated straight from the game, no manual editing.
 
 ---
 
